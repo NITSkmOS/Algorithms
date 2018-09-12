@@ -4,8 +4,9 @@ This repository contains examples of various algorithms written on different pro
 
 ## Implemented Algorithms
 
-| Algorithm                                                                                       | C                           | CPP                         | Java                        | Python                      |
-| ----------------------------------------------------------------------------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
+| Algorithm                                                                                       | C                                     | CPP                                   | Java                                  | Python                                |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- |
+| [Euclidean GCD](https://en.wikipedia.org/wiki/Euclidean_algorithm)                              |                                       |                                       |                                       | [:octocat:](Euclidean\ GCD/Python)    |
 
 
 ## Implemented Data Structures
