@@ -7,6 +7,8 @@ This repository contains examples of various algorithms written on different pro
 | Algorithm                                                                                       | C                                     | CPP                                   | Java                                  | Python                                |
 |:----------------------------------------------------------------------------------------------- |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
 | [Euclidean GCD](https://en.wikipedia.org/wiki/Euclidean_algorithm)                              |                                       |                                       |                                       | [:octocat:](euclidean_gcd/Python)     |
+| [QuickSort](https://en.wikipedia.org/wiki/Quicksort)                                            |                                       |                                       |                                       | [:octocat:](quicksort/Python)         |
+| [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)                                          |                                       |                                       |                                       | [:octocat:](merge_sort/Python)        |
 
 
 ## Implemented Data Structures

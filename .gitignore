@@ -7,9 +7,6 @@
 *.class
 # MacOS
 .DS_Store
-# coala
-*.orig
-
 # Jetbrains
 .idea/
 # vscode project files
