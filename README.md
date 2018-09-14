@@ -1,5 +1,7 @@
 # Welcome to the NITSkmOS/Algorithms
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/29024673e94b48459809432cdd280e39)](https://app.codacy.com/app/NITSkmOS/Algorithms?utm_source=github.com&utm_medium=referral&utm_content=NITSkmOS/Algorithms&utm_campaign=Badge_Grade_Settings)
+
 This repository contains examples of various algorithms written on different programming languages...
 
 ## Implemented Algorithms
