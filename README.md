@@ -11,7 +11,7 @@ This repository contains examples of various algorithms written on different pro
 | [Euclidean GCD](https://en.wikipedia.org/wiki/Euclidean_algorithm)                              |                                       |                                       |                                       | [:octocat:](euclidean_gcd/Python)     |
 | [QuickSort](https://en.wikipedia.org/wiki/Quicksort)                                            |                                       |                                       |                                       | [:octocat:](quicksort/Python)         |
 | [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)                                          |                                       |                                       |                                       | [:octocat:](merge_sort/Python)        |
-| [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  |                                       |                                       |                                       | [:octocat:](insertion_sort/Python)    |
+| [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         |                                       |                                       | [:octocat:](insertion_sort/Python)    |
 
 
 ## Implemented Data Structures
