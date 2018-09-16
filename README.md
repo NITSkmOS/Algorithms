@@ -2,6 +2,8 @@
 
 [![NITSkmOS Algorithms](https://img.shields.io/badge/NITSkmOS-Algorithms-blue.svg)](https://github.com/NITSkmOS/Algorithms)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/29024673e94b48459809432cdd280e39)](https://app.codacy.com/app/NITSkmOS/Algorithms?utm_source=github.com&utm_medium=referral&utm_content=NITSkmOS/Algorithms&utm_campaign=Badge_Grade_Settings)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/NITSkmOS/Algorithms/blob/master/LICENSE)
+
 
 This repository contains examples of various algorithms written on different programming languages...
 
@@ -14,6 +16,7 @@ This repository contains examples of various algorithms written on different pro
 | [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)                                          |                                       |                                       |                                       | [:octocat:](merge_sort/Python)        |
 | [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         |                                       |                                       | [:octocat:](insertion_sort/Python)    |
 | [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)                                    |                                       |                                       |                                       | [:octocat:](counting_sort/Python)     |
+| [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)                                          |                                       |                                       |                                       | [:octocat:](radix_sort/Python)        |
 
 
 ## Implemented Data Structures
