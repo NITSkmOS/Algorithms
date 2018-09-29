@@ -4,7 +4,7 @@ def insertion_sort(arr):
 
     :param arr: A list of element to sort.
     """
-    for slot in range(1, len(arr)): 
+    for slot in range(1, len(arr)):
         value = arr[slot]
         test_slot = slot - 1
         while test_slot > -1 and arr[test_slot] > value:
