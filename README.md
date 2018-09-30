@@ -16,10 +16,11 @@ This repository contains examples of various algorithms written on different pro
 | [QuickSort](https://en.wikipedia.org/wiki/Quicksort)                                            |                                       |                                       |                                       | [:octocat:](quicksort/Python)         |
 | [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)                                          |                                       |                                       |                                       | [:octocat:](merge_sort/Python)        |
 | [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         | [:octocat:](insertion_sort/Cpp)       |                                       | [:octocat:](insertion_sort/Python)    |
+| [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         |                                       |                                       | [:octocat:](insertion_sort/Python)    |
 | [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)                                    |                                       |                                       |                                       | [:octocat:](counting_sort/Python)     |
 | [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)                                          |                                       |                                       |                                       | [:octocat:](radix_sort/Python)        |
 | [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       | [:octocat:](binary_search/Cpp)        |                                       | [:octocat:](binary_search/Python)     |
-| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        | [:octocat:](bubble_sort/C)            | [:octocat:](bubble_sort/Cpp)          |                                       |                                       |
+| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        | [:octocat:](bubble_sort/C)            | [:octocat:](bubble_sort/Cpp)          | [:octocat:](bubble_sort/Java)                                       |                                       |
 | [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           | [:octocat:](shell_sort/C)             |                                       |                                       | [:octocat:](shell_sort/Python)        |
 | [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |                                       |                                       | [:octocat:](heap_sort/python)        |
 
@@ -48,9 +49,14 @@ This repository contains examples of various algorithms written on different pro
 ## Contributing
 
 1. Fork it!
+<<<<<<< HEAD
 2. Clone the forked repository to local system.
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -am 'Add some feature'`.
+=======
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`.
+>>>>>>> BubbleSort.Java: Add BubbleSort Algorithm
 
    Go through [Commit Messages guidelines](CONTRIBUTING.md#write-good-commit-messages)
 5. Push to the branch: `git push origin my-new-feature`

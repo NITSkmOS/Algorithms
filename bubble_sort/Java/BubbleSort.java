@@ -1,15 +1,12 @@
-package bubblesort;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BubbleSort {
 
 	public ArrayList<Integer> bubbleSort(ArrayList<Integer> arrli) {
-		
 		/*
 		 * Function to do bubble sort.
-		 * 
+		 *
 		 * :param arrli: A list of element to sort.
 		 */
 		boolean swapped;
@@ -30,15 +27,15 @@ public class BubbleSort {
 		} while (swapped || j == 1);
 		return arrli;
 	}
-	
-	
+
+
 	public static void main(String[] args) {
 		BubbleSort nb = new BubbleSort();
 		ArrayList<Integer> arrli = new ArrayList<Integer>(Arrays.asList(6, 5, 4, 3, 2, 1));
 		arrli = nb.bubbleSort(arrli);
 		String joined = String.join(", ", arrli.toString());
 		System.out.print("Sorted elements using Bubble Sort:\n"+joined);
-		
+
 	}
 
 }
