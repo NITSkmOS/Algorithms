@@ -10,6 +10,7 @@ def shellSort(arr):
             arr[j] = temp
         gap/=2  
         gap = int(gap)
+    return arr
 
 
 def main():
