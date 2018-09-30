@@ -3,7 +3,7 @@ import java.util.*;
 class InsertionSort 
 { 
     /*Function to sort array using insertion sort*/
-    static void insertionsort(int arr[]) 
+    public static void insertionsort(int arr[]) 
     { 
         int n = arr.length; 
         for (int i=1; i<n; ++i) 
