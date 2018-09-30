@@ -23,7 +23,7 @@ This repository contains examples of various algorithms written on different pro
 
 | Data Structure                                                                                  | C                           | CPP                         | Java                        | Python                      |
 |:----------------------------------------------------------------------------------------------- |:---------------------------:|:---------------------------:|:---------------------------:|:---------------------------:|
-|                                                                                                 |                                       |                                       |                                       |                                       |
+| Queue                                                                                           |                                       | [:octocat:](queue/cpp)                                       |                                       |                                       |
 
 
 ## Sample Run
