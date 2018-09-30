@@ -30,7 +30,7 @@ This repository contains examples of various algorithms written on different pro
 | [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))                               |                                       |                                       | [:octocat:](stack/Java)               | [:octocat:](stack/Python)             |
 | [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                       |                                       |                                       |
 | [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               |                                       | [:octocat:](avl_tree/Java)            |                                       |
-
+| [Doubly Linked List](https://en.wikipedia.org/wiki/Doubly_linked_list) |[:octocat:](doubly_linked_list/c) |
 
 ## Sample Run
 
@@ -49,7 +49,6 @@ This repository contains examples of various algorithms written on different pro
 2. Clone the forked repository to local system.
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -am 'Add some feature'`.
-
    Go through [Commit Messages guidelines](CONTRIBUTING.md#write-good-commit-messages)
 5. Push to the branch: `git push origin my-new-feature`
 6. Submit a pull request :smile:
