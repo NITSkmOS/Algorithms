@@ -18,13 +18,15 @@ This repository contains examples of various algorithms written on different pro
 | [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)                                    |                                       |                                       |                                       | [:octocat:](counting_sort/Python)     |
 | [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)                                          |                                       |                                       |                                       | [:octocat:](radix_sort/Python)        |
 | [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)   |                             |                                       |   [:octocat:](radix_sort/C++)                                    |         |
+| [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       |                                       |                                       | [:octocat:](binary_search/Python)     |
+| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        |                                       | [:octocat:](bubble_sort/C++)          |                                       |                                       |
 
 
 ## Implemented Data Structures
 
 | Data Structure                                                                                  | C                           | CPP                         | Java                        | Python                      |
 |:----------------------------------------------------------------------------------------------- |:---------------------------:|:---------------------------:|:---------------------------:|:---------------------------:|
-|                                                                                                 |                                       |                                       |                                       |                                       |
+| Queue                                                                                           |                                       | [:octocat:](queue/cpp)                                       |                                       |                                       |
 
 
 ## Sample Run
