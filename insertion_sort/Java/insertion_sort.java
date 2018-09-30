@@ -1,5 +1,4 @@
-import java.util.*;
-class InsertionSort 
+public class InsertionSort 
 { 
 	public static void sort(int arr[]) 
 	{ 
@@ -26,15 +25,7 @@ class InsertionSort
 	} 
 	public static void main(String args[]) 
 	{
-        Scanner in = new Scanner(System.in);
-		System.out.print("Enter the number of values > ");
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++)
-        {
-            System.out.print("Enter "+i+"th number > ");
-            arr[i] = in.nextInt();
-        } 
+        int[] arr = new int[] {2, 3, 0, 4};
 	 
 		sort(arr); 
 		
