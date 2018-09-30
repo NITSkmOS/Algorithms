@@ -14,7 +14,7 @@ QuickSort Algorithm
 
 def quicksort(arr):
     """
-    Fuction to do quicksort.
+    Function to do quicksort.
 
     :param arr: A list of element to sort.
     """
