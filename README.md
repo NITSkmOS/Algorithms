@@ -41,11 +41,11 @@ This repository contains examples of various algorithms written on different pro
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`.
+3. Commit your changes: `git commit -am 'Add some feature'`
    
    Go through [Commit Messages guidelines](CONTRIBUTING.md#write-good-commit-messages)
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :smile:
+5. Submit a pull request :smile:)
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
