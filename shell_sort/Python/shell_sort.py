@@ -2,13 +2,12 @@ def shell_sort(arr):
     """
     Fuction to sort using Shell Sort
     <https://en.wikipedia.org/wiki/Shellsort>.
-
     :param arr:     A list of element to sort
     """
 
     gap = int((len(arr)/2))
-    while gap > 0: 
-        for i in range (gap, len(arr)):
+    while gap > 0:
+        for i in range(gap, len(arr)):
             temp = arr[i]
             j = i
             while j >= gap and arr[j - gap] > temp:
@@ -17,7 +16,7 @@ def shell_sort(arr):
 
             arr[j] = temp
 
-        gap/=2 
+        gap /= 2
         gap = int(gap)
 
     return arr
