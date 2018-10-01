@@ -12,6 +12,7 @@ def counting_sort(arr, digit: int, radix=10):
     arr_len = len(arr)
     count = [0]*radix   # counts the number of occurences of each digit in arr
     result = [0]*arr_len
+
     def _digit_find(num, digit, radix):
         return int((num / radix ** digit) % radix)
 
@@ -19,11 +20,11 @@ def counting_sort(arr, digit: int, radix=10):
         digit_of_arr_i = _digit_find(arr[i], digit, radix)
         count[digit_of_arr_i] += 1
 
-    for j in range(1,radix):
+    for j in range(1, radix):
         count[j] += count[j-1]
 
     for m in range(arr_len-1, -1, -1):
-        digit_of_arr_i =  _digit_find(arr[m], digit, radix)
+        digit_of_arr_i = _digit_find(arr[m], digit, radix)
         count[digit_of_arr_i] -= 1
         result[count[digit_of_arr_i]] = arr[m]
 
