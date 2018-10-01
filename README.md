@@ -17,13 +17,15 @@ This repository contains examples of various algorithms written on different pro
 | [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         |                                       |                                       | [:octocat:](insertion_sort/Python)    |
 | [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)                                    |                                       |                                       |                                       | [:octocat:](counting_sort/Python)     |
 | [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)                                          |                                       |                                       |                                       | [:octocat:](radix_sort/Python)        |
+| [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       |                                       |                                       | [:octocat:](binary_search/Python)     |
+| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        |                                       | [:octocat:](bubble_sort/C++)          |                                       |                                       |
 
 
 ## Implemented Data Structures
 
 | Data Structure                                                                                  | C                           | CPP                         | Java                        | Python                      |
 |:----------------------------------------------------------------------------------------------- |:---------------------------:|:---------------------------:|:---------------------------:|:---------------------------:|
-|                                                                                                 |                                       |                                       |                                       |                                       |
+| Queue                                                                                           |                                       | [:octocat:](queue/cpp)                                       |                                       |                                       |
 
 
 ## Sample Run
@@ -38,6 +40,14 @@ This repository contains examples of various algorithms written on different pro
 
 
 ## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`.
+   
+   Go through [Commit Messages guidelines](CONTRIBUTING.md#write-good-commit-messages)
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :smile:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
