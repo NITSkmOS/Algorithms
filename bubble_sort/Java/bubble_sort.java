@@ -1,39 +1,31 @@
-public class MyBubbleSort {
-  
-    // logic to sort the elements
-    public static void bubble_srt(int array[]) {
-        int n = array.length;
-        int k;
-        for (int m = n; m >= 0; m--) {
-            for (int i = 0; i < n - 1; i++) {
-                k = i + 1;
-                if (array[i] > array[k]) {
-                    swapNumbers(i, k, array);
+public class bubbleSORT {
+ 
+    
+    public static void main(String [] args){
+    
+        int i, j , swap;
+        
+        int [] arr = {3,2,1,5,1,2,6,6,8,4,9,12 ,0 ,34, 34,6,1,100}; // array to be sorted
+    
+            for(i = 0; i < arr.length; i ++){
+                
+                for(j = 0; j < arr.length - 1  ;j++){
+                    
+                    if(arr[j] > arr[j+1]){
+                        
+                        swap = arr[j];        // place the bigger number to swap
+                        arr[j] = arr[j+1];    // place the smaller number
+                        arr[j+1] = swap;      
+                    
+                    
+                    }
                 }
             }
-            printNumbers(array);
-        }
-    }
-  
-    private static void swapNumbers(int i, int j, int[] array) {
-  
-        int temp;
-        temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-  
-    private static void printNumbers(int[] input) {
-          
-        for (int i = 0; i < input.length; i++) {
-            System.out.print(input[i] + ", ");
-        }
-        System.out.println("\n");
-    }
-  
-    public static void main(String[] args) {
-        int[] input = { 4, 2, 9, 6, 23, 12, 34, 0, 1 };
-        bubble_srt(input);
-  
+            
+            //Display the sorted array
+            for(int x = 0 ; x < arr.length ; x ++){
+            System.out.print(arr[x] + ", ");
+            
+            }
     }
 }
