@@ -14,8 +14,8 @@ struct avl_node {
  * Class Declaration
  */
 class avlTree {
-   public:
-    int height(avl_node *};
+ public:
+  int height(avl_node *};
   int diff(avl_node *};
   avl_node * rr_rotation(avl_node *};
   avl_node * ll_rotation(avl_node *};
