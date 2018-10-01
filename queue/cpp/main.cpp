@@ -20,4 +20,3 @@ int main() {
     std::cout << q.top().value_or(-1) << "\n";
     return 0;
 }
-
