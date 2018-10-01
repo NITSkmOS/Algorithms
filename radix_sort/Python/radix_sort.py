@@ -12,7 +12,7 @@ def radix_sort(array, base=10):
         digit_ref = [[] for _ in range(base)]
         for num in array:
             digit_ref[(num // base ** i) % base].append(num)
-        array=[]
+        array = []
         for section in digit_ref:
             array.extend(section)
     return array
