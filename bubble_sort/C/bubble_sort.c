@@ -1,19 +1,16 @@
-#include<iostream>
- 
-using namespace std;
+#include<stdio.h>
  
 int main()
 {
     int a[50],n,i,j,temp;
-    cout<<"Enter the size of array: ";
-    cin>>n;
-    cout<<"Enter the array elements: "; 
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    printf("Enter the array elements: ");
     
     for(i=0;i<n;++i)
-        cin>>a[i];
+        scanf("%d",&a[i]);
         
     for(i=1;i<n;++i)
-    {
         for(j=0;j<(n-i);++j)
             if(a[j]>a[j+1])
             {
@@ -21,11 +18,10 @@ int main()
                 a[j]=a[j+1];
                 a[j+1]=temp;
             }
-    }
-    
-    cout<<"Array after bubble sort:";
+            
+    printf("\nArray after sorting: ");
     for(i=0;i<n;++i)
-        cout<<" "<<a[i];
-        
+        printf("%d ",a[i]);
+ 
     return 0;
 }
