@@ -1,8 +1,9 @@
 def binary_search(arr, key):
     """
-    Function to search an element 'key' in 'arr' array.
+    Function to search an element `key` in `arr` array.
 
     :param arr: A list of element to sort.
+    :param key: Element to search in the given `arr` list
     """
     left = 0
     right = len(arr)-1
@@ -21,9 +22,11 @@ def binary_search(arr, key):
 def main():
     arr = [1, 2, 3, 4, 5, 6]
     key = 5
-    print("Index of " + str(key) + " in the array: ", str(binary_search(arr, key)))
+    print("Index of " + str(key) + " in the array: ",
+          str(binary_search(arr, key)))
     key = 8
-    print("Index of " + str(key) + " in the array: ", str(binary_search(arr, key)))
+    print("Index of " + str(key) + " in the array: ",
+          str(binary_search(arr, key)))
 
 
 if __name__ == '__main__':
