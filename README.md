@@ -14,29 +14,30 @@ This repository contains examples of various algorithms written on different pro
 | [Euclidean GCD](https://en.wikipedia.org/wiki/Euclidean_algorithm)                              |                                       |                                       |                                       | [:octocat:](euclidean_gcd/Python)     |
 | [QuickSort](https://en.wikipedia.org/wiki/Quicksort)                                            |                                       |                                       |                                       | [:octocat:](quicksort/Python)         |
 | [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)                                          |                                       |                                       |                                       | [:octocat:](merge_sort/Python)        |
-| [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         |                                       |                                       | [:octocat:](insertion_sort/Python)    |
+| [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         | [:octocat:](insertion_sort/Cpp)       |                                       | [:octocat:](insertion_sort/Python)    |
 | [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)                                    |                                       |                                       |                                       | [:octocat:](counting_sort/Python)     |
 | [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)                                          |                                       |                                       |                                       | [:octocat:](radix_sort/Python)        |
 | [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       |                                       |                                       | [:octocat:](binary_search/Python)     |
-| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        |                                       | [:octocat:](bubble_sort/C++)          |                                       |                                       |
+| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        |                                       | [:octocat:](bubble_sort/Cpp)          |                                       |                                       |
 
 
 ## Implemented Data Structures
 
-| Data Structure                                                                                  | C                           | CPP                         | Java                        | Python                      |
-|:----------------------------------------------------------------------------------------------- |:---------------------------:|:---------------------------:|:---------------------------:|:---------------------------:|
-| Queue                                                                                           |                                       | [:octocat:](queue/cpp)                                       |                                       |                                       |
+| Data Structure                                                                                  | C                                     | CPP                                   | Java                                  | Python                                |
+|:----------------------------------------------------------------------------------------------- |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
+| [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))                               |                                       | [:octocat:](queue/Cpp)                |                                       |                                       |
+| [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                       |                                       |                                       |
 
 
 ## Sample Run
 
-| Language        | Steps                                                          |
-| --------------- | -------------------------------------------------------------- |
-| JavaScript      | `node [filename.js]`                                           |
-| Python          | `python [filename.py]`                                         |
-| C               | `gcc [filename.c]`<br>`./a.out  # unix`<br>`a.exe  # windows`  |
-| CPP             | `g++ [filename.cpp]`<br>`./a.out # unix`<br>`a.exe # windows`  |
-| Java            | `javac [filename.java]`<br>`java [filename]`                   |
+| Language        | Steps                                                                  |
+| --------------- | ---------------------------------------------------------------------- |
+| JavaScript      | <pre>node [filename.js]</pre>                                          |
+| Python          | <pre>python [filename.py]</pre>                                        |
+| C               | <pre>gcc [filename.c]<br>./a.out  # unix<br>a.exe  # windows</pre>     |
+| CPP             | <pre>g++ [filename.cpp]<br>./a.out # unix<br>a.exe # windows</pre>     |
+| Java            | <pre>javac [filename.java]<br>java [filename]</pre>                    |
 
 
 ## Contributing
