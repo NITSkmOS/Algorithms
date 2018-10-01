@@ -19,7 +19,7 @@ This repository contains examples of various algorithms written on different pro
 | [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)                                          |                                       |                                       |                                       | [:octocat:](radix_sort/Python)        |
 | [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       |                                       |                                       | [:octocat:](binary_search/Python)     |
 | [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        |                                       | [:octocat:](bubble_sort/C++)          |                                       |                                       |
-
+| [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       | [:octocat:](heap_sort/C++)            |                                       |                                       | 
 
 ## Implemented Data Structures
 
