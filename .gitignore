@@ -11,3 +11,5 @@
 .idea/
 # vscode project files
 .vscode/
+# coala
+*.orig
