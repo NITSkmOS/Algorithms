@@ -8,12 +8,12 @@ for i in range(0,5):
 n = len(a)
 
 for i in range(n):
-    min = i
+    min_element = i
 
     for j in range(i+1,n):
-        if(a[min]>a[j]):
+        if(a[min_element]>a[j]):
             min = j
-    a[i],a[min] = a[min],a[i]
+    a[i],a[min_element] = a[min_element],a[i]
 
 
 print(a)
