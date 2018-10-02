@@ -31,9 +31,9 @@ def Dequeue(Queue):
 
 
 def main():
-    Enqueue(Queue, 'a')
-    Enqueue(Queue, 'b')
-    Enqueue(Queue, 'c')
+    Enqueue(Queue , 'a')
+    Enqueue(Queue , 'b')
+    Enqueue(Queue , 'c')
     print(Dequeue(Queue))
     print(Dequeue(Queue))
     print(Dequeue(Queue))
