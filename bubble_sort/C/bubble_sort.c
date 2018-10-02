@@ -45,5 +45,4 @@ void print_array(int arr[], int size) {
 		printf("%d ", arr[i]);
 
 	printf("\n");
-	return 0;
 }

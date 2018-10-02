@@ -50,18 +50,16 @@ public class euclidean_gcd {
     }
 
     public static void main (String[] args) {
-        Scanner sc = new Scanner(System.in);
+        long a = 20;
+        long b = 30;
+
+        long gcd_div = euclideanGcdDivision(a, b);
+        System.out.println("Division: GCD of " +a+ " & " +b+ " is : " + gcd_div);
+
+        long gcd_rec = euclideanGcdRecursive(a, b);
+        System.out.println("Recursive: GCD of " +a+ " & " +b+ " is : " + gcd_rec);
+
         euclidean_gcd obj = new euclidean_gcd();
-        System.out.print("Enter a & b of ax + by = gcd(a, b) : ");  // User Inputs
-        long a = sc.nextLong();
-        long b = sc.nextLong();
-
-        long gcd_div = euclideanGcdDivision(a,b);
-        System.out.println("Division: GCD of " +a+ " & " +b+ " is : " +gcd_div);
-
-        long gcd_rec = euclideanGcdRecursive(a,b);
-        System.out.println("Recursive: GCD of " +a+ " & " +b+ " is : " +gcd_rec);
-
         obj.extendedGcd(a, b);
     }
 }

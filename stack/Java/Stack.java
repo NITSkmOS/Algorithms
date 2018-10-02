@@ -1,6 +1,8 @@
+import java.util.NoSuchElementException;
+
 public class Stack<Item>{
-    private int size; // size of the stack
-    private Node first; // top of stack
+    private int size; // size of the Stack
+    private Node first; // top of Stack
 
     private class Node {
         private Item item;
@@ -16,25 +18,25 @@ public class Stack<Item>{
     }
 
     /**
-     * Returns whether the stack is empty or not.
+     * Returns whether the Stack is empty or not.
      *
-     * @return true if the stack is empty, otherwise false.
+     * @return true if the Stack is empty, otherwise false.
      */
     public boolean isEmpty() {
         return first == null;
     }
 
     /**
-     * Returns the amount of times in this stack.
+     * Returns the amount of times in this Stack.
      *
-     * @return the amount of times in this stack.
+     * @return the amount of times in this Stack.
      */
     public int getSize() {
         return size;
     }
 
     /**
-     * Add an item to this stack.
+     * Add an item to this Stack.
      *
      * @param item the item to add.
      */
@@ -47,9 +49,9 @@ public class Stack<Item>{
     }
 
     /**
-     * Returns and removes the item on the top of this stack.
+     * Returns and removes the item on the top of this Stack.
      *
-     * @throws NoSuchElementException if this stack is empty
+     * @throws NoSuchElementException if this Stack is empty
      */
     public Item pop() throws  NoSuchElementException{
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");
@@ -61,10 +63,10 @@ public class Stack<Item>{
 
 
     /**
-     * Returns the top item of the stack, without removing it.
+     * Returns the top item of the Stack, without removing it.
      *
-     * @return the item on top of this stack
-     * @throws NoSuchElementException if this stack is empty
+     * @return the item on top of this Stack
+     * @throws NoSuchElementException if this Stack is empty
      */
     public Item peek() throws  NoSuchElementException{
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");
@@ -75,12 +77,12 @@ public class Stack<Item>{
      * Example usage
      */
     public static void main(String[] args) throws NoSuchElementException {
-        Stack<String> stack = new Stack<String>();
-        stack.push("Hello World");
-        System.out.println(stack.peek()); // "Hello World"
-        stack.push("I am on the top now");
-        System.out.println(stack.peek()); // "I am on the top now"
-        System.out.println(stack.pop()); // "I am on the top now"
-        System.out.println(stack.peek()); // "Hello World
+        Stack<String> Stack = new Stack<String>();
+        Stack.push("Hello World");
+        System.out.println(Stack.peek()); // "Hello World"
+        Stack.push("I am on the top now");
+        System.out.println(Stack.peek()); // "I am on the top now"
+        System.out.println(Stack.pop()); // "I am on the top now"
+        System.out.println(Stack.peek()); // "Hello World
     }
 }
