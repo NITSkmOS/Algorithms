@@ -26,9 +26,13 @@ def Dequeue(Queue):
       Queue['back'] = None
     return 'Cannot dequeue because queue is empty'
 
-Enqueue(Queue, 'a')
-Enqueue(Queue, 'b')
-Enqueue(Queue, 'c')
-print (Dequeue(Queue))
-print (Dequeue(Queue))
-print (Dequeue(Queue))
+def main():
+  Enqueue(Queue, 'a')
+  Enqueue(Queue, 'b')
+  Enqueue(Queue, 'c')
+  print (Dequeue(Queue))
+  print (Dequeue(Queue))
+  print (Dequeue(Queue))
+
+if __name__=="__main__":
+  main()
