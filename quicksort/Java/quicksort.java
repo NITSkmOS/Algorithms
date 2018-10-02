@@ -1,17 +1,14 @@
 import java.util.Scanner;
-
 class QuickSortClass {
     public static void sort(int[] arr)
     {
         quickSort(arr, 0, arr.length - 1);
     }
-
     public static void quickSort(int arr[], int low, int high) 
     {
         int i = low, j = high;
         int temp;
         int pivot = arr[(low + high) / 2];
-
         while (i <= j) 
         {
             while (arr[i] < pivot)
@@ -28,13 +25,11 @@ class QuickSortClass {
                 j--;
             }
         }
- 
         if (low < j)
             quickSort(arr, low, j);
         if (i < high)
             quickSort(arr, i, high);
     }
-
     public static void main(String[] args) 
     {
       		int[] input = {89,56,2,48,23,41,69,10};
