@@ -21,6 +21,7 @@ This repository contains examples of various algorithms written on different pro
 | [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       | [:octocat:](binary_search/Cpp)        |                                       | [:octocat:](binary_search/Python)     |
 | [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        | [:octocat:](bubble_sort/C)            | [:octocat:](bubble_sort/Cpp)          |                                       |                                       |
 | [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           |                                       |                                       |                                       | [:octocat:](shell_sort/Python)        |
+| [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |                                       |                                       | [:octocat:](heap_sort/python)        |
 
 
 ## Implemented Data Structures
