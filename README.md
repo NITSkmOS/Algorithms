@@ -28,10 +28,7 @@ This repository contains examples of various algorithms written on different pro
 | [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))                               |                                       | [:octocat:](queue/Cpp)                |                                       |                                       |
 | [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                       |                                       |                                       |
   [Doubly Linked List](https://en.wikipedia.org/wiki/Doubly_linked_list)                           |                                      | [:octocat:](doubly_linked_list/cpp)                |                                       | 
-              
-              
-            
-
+             
 ## Sample Run
 
 | Language        | Steps                                                                  |
