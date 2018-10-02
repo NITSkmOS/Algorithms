@@ -5,7 +5,7 @@
 max_line_length = 80
 
 [all.cpp]
-files = **/*.c, **/*.h, **/*.cpp
+files = **/*.c, **/*.cpp
 bears = SpaceConsistencyBear
 use_spaces = False
 
@@ -20,8 +20,7 @@ bears = PEP8Bear, PycodestyleBear
 default_actions = PEP8Bear: ApplyPatchAction
 
 [all.cpplint]
-files = **/*.cpp, **/*.h, **/*.c
-ignore = queue/Cpp/Queue.h
+files = **/*.cpp, **/*.c
 bears = CPPLintBear
 cpplint_ignore = build/namespaces, legal/copyright, runtime/references,
                  whitespace/tab, whitespace/comments
