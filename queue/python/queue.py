@@ -9,7 +9,7 @@ class Node:
 
 def Enqueue(Queue, element):
   N = Node(element, None)
-  if Queue['back'] == None:
+  if Queue['back'] is None:
     Queue['front'] = N
     Queue['back'] = N
   else:
@@ -17,12 +17,12 @@ def Enqueue(Queue, element):
     Queue['back'] = Queue['back'].next
 
 def Dequeue(Queue):
-  if Queue['front'] != None:
+  if Queue['front'] is not None:
     first = Queue['front']
     Queue['front'] = Queue['front'].next
     return first.data
   else:
-    if Queue['back'] != None:
+    if Queue['back'] is not None:
       Queue['back'] = None
     return 'Cannot dequeue because queue is empty'
 
