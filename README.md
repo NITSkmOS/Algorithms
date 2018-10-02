@@ -11,14 +11,15 @@ This repository contains examples of various algorithms written on different pro
 
 | Algorithm                                                                                       | C                                     | CPP                                   | Java                                  | Python                                |
 |:----------------------------------------------------------------------------------------------- |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
-| [Euclidean GCD](https://en.wikipedia.org/wiki/Euclidean_algorithm)                              |                                       |                                       |                                       | [:octocat:](euclidean_gcd/Python)     |
+| [Euclidean GCD](https://en.wikipedia.org/wiki/Euclidean_algorithm)                              | [:octocat:](euclidean_gcd/C)          |                                      |                                        | [:octocat:](euclidean_gcd/Python)     |
 | [QuickSort](https://en.wikipedia.org/wiki/Quicksort)                                            |                                       |                                       |                                       | [:octocat:](quicksort/Python)         |
 | [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)                                          |                                       |                                       |                                       | [:octocat:](merge_sort/Python)        |
 | [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         | [:octocat:](insertion_sort/Cpp)       |                                       | [:octocat:](insertion_sort/Python)    |
 | [Counting Sort](https://en.wikipedia.org/wiki/Counting_sort)                                    |                                       |                                       |                                       | [:octocat:](counting_sort/Python)     |
 | [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)                                          |                                       |                                       |                                       | [:octocat:](radix_sort/Python)        |
-| [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       |                                       |                                       | [:octocat:](binary_search/Python)     |
-| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        |                                       | [:octocat:](bubble_sort/Cpp)          |                                       |                                       |
+| [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       | [:octocat:](binary_search/Cpp)        |                                       | [:octocat:](binary_search/Python)     |
+| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        | [:octocat:](bubble_sort/C)            | [:octocat:](bubble_sort/Cpp)          |                                       |                                       |
+| [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           |                                       |                                       |                                       | [:octocat:](shell_sort/Python)        |
 
 
 ## Implemented Data Structures
@@ -26,10 +27,14 @@ This repository contains examples of various algorithms written on different pro
 | Data Structure                                                                                  | C                                     | CPP                                   | Java                                  | Python                                |
 |:----------------------------------------------------------------------------------------------- |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
 | [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))                               |                                       | [:octocat:](queue/Cpp)                |                                       |                                       |
-| [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))                               |                                       |                                       | [:octocat:](stack/Java)               |                                       |
+| [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))                               |                                       |                                       | [:octocat:](stack/Java)               | [:octocat:](stack/Python)             |
 | [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                       |                                       |                                       |
+<<<<<<< bst
 | [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              |                                       |                                       | [:octocat:](avl_tree/Java)            |                                       |
+| [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)                          | [:octocat:](bst/C)                    |                                       |                                       |                                       |
+| [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               |                                       | [:octocat:](avl_tree/Java)            |                                       |
 
+>>>>>>> master
 
 ## Sample Run
 
@@ -45,12 +50,13 @@ This repository contains examples of various algorithms written on different pro
 ## Contributing
 
 1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`.
-   
+2. Clone the forked repository to local system.
+3. Create your feature branch: `git checkout -b my-new-feature`
+4. Commit your changes: `git commit -am 'Add some feature'`.
+
    Go through [Commit Messages guidelines](CONTRIBUTING.md#write-good-commit-messages)
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :smile:
+5. Push to the branch: `git push origin my-new-feature`
+6. Submit a pull request :smile:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
