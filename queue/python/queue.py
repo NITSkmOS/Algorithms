@@ -5,8 +5,8 @@ Queue = {'front': None, 'back': None}
 class Node:
   def __init__(self, data, next):
     self.data = data
-    self.next = next  
-    
+    self.next = next
+
 def Enqueue(Queue, element):
   N = Node(element, None)
   if Queue['back'] == None:
@@ -15,7 +15,7 @@ def Enqueue(Queue, element):
   else:
     Queue['back'].next = N
     Queue['back'] = Queue['back'].next
-    
+
 def Dequeue(Queue):
   if Queue['front'] != None:
     first = Queue['front']
@@ -27,12 +27,12 @@ def Dequeue(Queue):
     return 'Cannot dequeue because queue is empty'
 
 def main():
-  Enqueue(Queue, 'a')
-  Enqueue(Queue, 'b')
-  Enqueue(Queue, 'c')
-  print (Dequeue(Queue))
-  print (Dequeue(Queue))
-  print (Dequeue(Queue))
+  Enqueue(Queue,'a')
+  Enqueue(Queue,'b')
+  Enqueue(Queue,'c')
+  print(Dequeue(Queue))
+  print(Dequeue(Queue))
+  print(Dequeue(Queue))
 
 if __name__=="__main__":
   main()
