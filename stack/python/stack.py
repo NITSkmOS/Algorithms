@@ -4,38 +4,46 @@ class Stack:
     """
 
     def __init__(self):
-        """
-        Constructor.
-        """
-        self.stack = []    # Initialise empty list
+
+        self.stack = [] # Initialise empty stack
 
     def push(self, dataval):
         """
         Method to push items in stack.
 
-        dataval: Value that user needs to push.
+        :param dataval: Value that user needs to push.
         """
-        self.stack.append(dataval)    # Add dataval at the end of the list.
+
+        self.stack.append(dataval)
 
     def pop(self):
         """
         Method for removing the last element from the stack.
 
-        Returns
-        -------
-        element that is popped.
+        :return:   Element that is popped.
         """
+
         if len(self.stack) <= 0:
-            # Raise an error is if stack is empty.
-            return ("No element in the Stack")
+            # Raise an error if stack is empty.
+            return "No element in the Stack"
+
         else:
             return self.stack.pop()
 
     def top(self):
-        # Show the last element of the list.
+        """
+        Method to show the last element of the stack.
+
+        :return:    last element of the stack.
+        """
+
         return self.stack[len(self.stack)-1]
 
     def display(self):
+        """
+        Method to print all elements of the stack.
+        """
+
         print(*self.stack)
 
 
