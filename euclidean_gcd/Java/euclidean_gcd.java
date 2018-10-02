@@ -2,8 +2,10 @@ import java.util.*;
 
 
 public class euclidean_gcd {
+
     /*
-    Calculates GCD of two numbers a & b using the division-based Euclidean Algorithm
+    * Calculates GCD of two numbers a & b using the division-based
+    * Euclidean Algorithm
     */
     public static long euclideanGcdDivision(long x, long y) {
         while(y != 0) {
@@ -15,7 +17,8 @@ public class euclidean_gcd {
     }
 
     /*
-    Calculates GCD of two numbers a & b using the Recursive-based Euclidean Algorithm
+    * Calculates GCD of two numbers a & b using the Recursive-based
+    * Euclidean Algorithm
     */
     public static long euclideanGcdRecursive(long x, long y) {
         if (x == 0)
@@ -24,7 +27,8 @@ public class euclidean_gcd {
     }
 
     /*
-    Calculates GCD of two numbers a & b using the Recursive-based Extended Euclidean Algorithm
+    * Calculates GCD of two numbers a & b using the Recursive-based Extended
+    * Euclidean Algorithm
     */
     public void extendedGcd(long a, long b) {
         long gcd_rec = euclideanGcdRecursive(a,b);
@@ -48,13 +52,12 @@ public class euclidean_gcd {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
         euclidean_gcd obj = new euclidean_gcd();
-        System.out.print("Enter a & b of ax + by = gcd(a, b) : "); // USer Inputs
+        System.out.print("Enter a & b of ax + by = gcd(a, b) : ");  // User Inputs
         long a = sc.nextLong();
         long b = sc.nextLong();
 
         long gcd_div = euclideanGcdDivision(a,b);
         System.out.println("Division: GCD of " +a+ " & " +b+ " is : " +gcd_div);
-
 
         long gcd_rec = euclideanGcdRecursive(a,b);
         System.out.println("Recursive: GCD of " +a+ " & " +b+ " is : " +gcd_rec);
