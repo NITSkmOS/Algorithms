@@ -1,8 +1,11 @@
 def heapify(arr, n, var):
     """
-    Recursive Function to rearrange a heap to maintain the heap property.
-    Heap Property: The key of the root node is greater or less than
-                   or equal to the keys of its children.
+    Recursive function to rearrange a heap to maintain the heap property.
+    Heap Property:  The key of the root node is greater or less than
+                    or equal to the keys of its children.
+    :param arr: A list of element to heapify.
+    :param n:   Size of heap.
+    :param var: To heapify subtree rooted at index.
     """
     highest = var
     left = (2*var)+1
@@ -23,7 +26,9 @@ def heapify(arr, n, var):
 def heapSort(arr):
     """
     The main function to implement Heap Sorting Algorithm.
-    Heap Sort: https://en.wikipedia.org/wiki/Heapsort
+    <https://en.wikipedia.org/wiki/Heapsort>
+
+    :param arr: A list of element to sort.
     """
     n = len(arr)
     for i in range(n, -1, -1):
@@ -39,7 +44,7 @@ def heapSort(arr):
 def main():
     arr = [15, 12, 36, 63, 96]
     print('Sorted elements using Heap Sort: {}'.format(
-        ' '.join(map(str, heapSort(arr)))))
+              ' '.join(map(str, heapSort(arr)))))
 
 
 if __name__ == '__main__':
