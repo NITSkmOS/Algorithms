@@ -34,5 +34,5 @@ def main():
   print(Dequeue(Queue))
   print(Dequeue(Queue))
 
-if __name__=="__main__":
+if __name__ == "__main__":
   main()
