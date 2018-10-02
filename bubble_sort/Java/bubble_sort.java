@@ -8,7 +8,7 @@ class BubbleSort
     obj.bubbleSort(arr);
   }
 
-  void bubbleSort(int a[])
+  void bubbleSort(int a[]) //function to sort and print any array passed in the ascending order
   {
     int t = 0;
     int n = a.length;
