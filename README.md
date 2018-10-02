@@ -1,5 +1,6 @@
 # Welcome to the NITSkmOS/Algorithms
 
+[![Gitter](https://badges.gitter.im/NITSkmOS/algo.svg)](https://gitter.im/NITSkmOS/algo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![NITSkmOS Algorithms](https://img.shields.io/badge/NITSkmOS-Algorithms-blue.svg)](https://github.com/NITSkmOS/Algorithms)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/29024673e94b48459809432cdd280e39)](https://app.codacy.com/app/NITSkmOS/Algorithms?utm_source=github.com&utm_medium=referral&utm_content=NITSkmOS/Algorithms&utm_campaign=Badge_Grade_Settings)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/NITSkmOS/Algorithms/blob/master/LICENSE)
