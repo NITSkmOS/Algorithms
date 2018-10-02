@@ -1,5 +1,7 @@
 #include<iostream>
+
 using namespace std;
+
 struct node{
     int data;
     node* next;
@@ -18,7 +20,7 @@ void insert(node **head, int n) {
     node *link = new node;
     link->data = n;
     link->next = nullptr;
-    if (!*head){
+    if (!*head) {
         link->next = link;
         *head = link;
     } else {
@@ -31,7 +33,6 @@ void insert(node **head, int n) {
     }
     show(*head);
 }
-
 int main() {
     node *head = nullptr;
     insert(&head, 4);
