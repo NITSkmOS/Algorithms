@@ -9,11 +9,11 @@ struct node{
 
 void show(node *head) {
     node *current = head;
-    cout<<"The list is ";
+    cout << "The list is ";
     do {
-        cout << current->data << " ";
+   		cout << current->data << " ";
         current = current->next;
-    } while(current != head);
+    } while (current != head);
     cout << endl;
 }
 void insert(node **head, int n) {
