@@ -5,7 +5,7 @@ struct node{
     node* next;
 };
 
-void show( node *head ) {
+void show(node *head) {
     node *current = head;
     cout<<"The list is ";
     do {
@@ -14,7 +14,7 @@ void show( node *head ) {
     } while(current != head);
     cout << endl;
 }
-void insert( node **head, int n ) {
+void insert(node **head, int n) {
     node *link = new node;
     link->data = n;
     link->next = nullptr;
