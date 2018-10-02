@@ -22,7 +22,7 @@ This repository contains examples of various algorithms written on different pro
 | [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        | [:octocat:](bubble_sort/C)            | [:octocat:](bubble_sort/Cpp)          |                                       |                                       |
 | [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           |                                       |                                       |                                       | [:octocat:](shell_sort/Python)        |
 | [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |                                       |                                       | [:octocat:](heap_sort/python)        |
-
+| [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)                              |           |                                      |         | [:octocat:](Dijkstra/Python2.7/)     |
 
 ## Implemented Data Structures
 
