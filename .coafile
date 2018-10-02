@@ -5,9 +5,8 @@
 max_line_length = 80
 use_spaces = True
 
-# python files should only use spaces
-[Python Spacing]
-files = **/*.py
+[all.space_checks]
+files = **/*.py, **/*.java, **/*.c, **/*.h, **/*.cpp
 bears = SpaceConsistencyBear
 use_spaces = True
 
