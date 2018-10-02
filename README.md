@@ -12,7 +12,11 @@ This repository contains examples of various algorithms written on different pro
 
 | Algorithm                                                                                       | C                                     | CPP                                   | Java                                  | Python                                |
 |:----------------------------------------------------------------------------------------------- |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
+<<<<<<< HEAD
 | [Euclidean GCD](https://en.wikipedia.org/wiki/Euclidean_algorithm)                              | [:octocat:](euclidean_gcd/C)          |                                      | [:octocat:](euclidean_gcd/Java)        | [:octocat:](euclidean_gcd/Python)     |
+=======
+| [Euclidean GCD](https://en.wikipedia.org/wiki/Euclidean_algorithm)                              | [:octocat:](euclidean_gcd/C)          |                                      |                                        | [:octocat:](euclidean_gcd/Python)     |
+>>>>>>> Update README.md
 | [QuickSort](https://en.wikipedia.org/wiki/Quicksort)                                            |                                       |                                       |                                       | [:octocat:](quicksort/Python)         |
 | [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)                                          |                                       |                                       |                                       | [:octocat:](merge_sort/Python)        |
 | [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)                                  | [:octocat:](insertion_sort/C)         | [:octocat:](insertion_sort/Cpp)       |                                       | [:octocat:](insertion_sort/Python)    |
@@ -31,8 +35,13 @@ This repository contains examples of various algorithms written on different pro
 | [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))                               |                                       | [:octocat:](queue/Cpp)                |                                       |                                       |
 | [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))                               |                                       |                                       | [:octocat:](stack/Java)               | [:octocat:](stack/Python)             |
 | [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                       |                                       |                                       |
+<<<<<<< HEAD
 | [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               |                                       | [:octocat:](avl_tree/Java)            | [:octocat:](avl_tree/Python)          |
 | [BST](https://en.wikipedia.org/wiki/Binary_search_tree)                                         |                                       |                                       |                                       |  [:octocat:](binary_search_tree/Python) |
+=======
+| [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               |                                       | [:octocat:](avl_tree/Java)            |                                       |
+| [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)                          |                                       |                                       |                                       | [:octocat:](binary_search_tree/Python)|
+>>>>>>> Update README.md
 
 ## Sample Run
 
