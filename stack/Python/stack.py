@@ -5,7 +5,7 @@ class Stack:
 
     def __init__(self):
 
-        self.stack = [] # Initialise empty stack
+        self.stack = []  # Initialise empty stack
 
     def push(self, dataval):
         """
