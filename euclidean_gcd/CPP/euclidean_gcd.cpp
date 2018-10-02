@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int gcd(int a, int b){
+int gcd(int a, int b) {
     if (a == 0)
         return b;
     if (b == 0)
@@ -9,7 +9,7 @@ int gcd(int a, int b){
     return gcd(b % a, a);
 }
 
-int main(){
+int main() {
     // a and b are two numbers.
     int a, b;
     cin >> a >> b;
