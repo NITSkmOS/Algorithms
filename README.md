@@ -57,6 +57,10 @@ This repository contains examples of various algorithms written on different pro
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Support
+
+Feel free to contact us at our [Gitter channel](https://gitter.im/NITSkmOS/algo), we'd be happy to help!
+
 ## Notes
 
 Only project maintainers should merge a PR.
