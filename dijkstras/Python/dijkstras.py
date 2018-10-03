@@ -2,7 +2,8 @@
     Dijkstra's shortest path Algorithm
         Args :  G - Dictionary of edges
                 s - Starting Node
-        Vars :  dist - Dictionary storing shortest distance from s to every other node
+        Vars :  dist - Dictionary storing shortest distance from s to
+         every other node
                 known - Set of knows nodes
                 path - Preceding node in path
 '''
