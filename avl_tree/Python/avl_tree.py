@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
-# Generic tree node class
 
+class TreeNode:
+    """
+    A node class
 
-class TreeNode(object):
+    :param val: Node value
+    """
 
     def __init__(self, val):
         self.val = val
@@ -11,24 +14,25 @@ class TreeNode(object):
         self.right = None
         self.height = 1
 
-# AVL Tree class which supports
-# insertion operation
 
-
-class AVL_Tree(object):
-
-    '''
-    Recursive function to insert key in
-    subtree rooted with node and returns
-    new root of subtree
-    '''
+class AVL_Tree:
+    """
+    AVL Tree class
+    """
 
     def insert(self, root, key):
+        """
+        Recursive function to insert key in subtree rooted with node
+
+        :returns:   new root of subtree
+        """
         # step 1 : normal BST
         if not root:
             return TreeNode(key)
-        elif key < root.val:
+
+        if key < root.val:
             root.left = self.insert(root.left, key)
+
         else:
             root.right = self.insert(root.right, key)
         # Step 2 : Update the height of the ancestor root
@@ -51,6 +55,7 @@ class AVL_Tree(object):
         if balance < -1 and key < root.right.val:
             root.right = self.rightRotate(root.right)
             return self.leftRotate(root)
+
         return root
 
     def leftRotate(self, z):
@@ -80,16 +85,19 @@ class AVL_Tree(object):
     def getHeight(self, root):
         if not root:
             return 0
+
         return root.height
 
     def getBalance(self, root):
         if not root:
             return 0
+
         return self.getHeight(root.left) - self.getHeight(root.right)
 
     def preOrder(self, root):
         if not root:
             return
+
         print("{0} ".format(root.val), end="")
         self.preOrder(root.left)
         self.preOrder(root.right)
@@ -97,6 +105,7 @@ class AVL_Tree(object):
     def inOrder(self, root):
         if not root:
             return
+
         self.inOrder(root.left)
         print("{0} ".format(root.val), end="")
         self.inOrder(root.right)
@@ -113,10 +122,10 @@ def main():
     root = myTree.insert(root, 50)
     root = myTree.insert(root, 28)
 
-    print("Pre-order Traversal of the constructed Tree : ")
+    print("Pre-order Traversal of the constructed Tree: ")
     myTree.preOrder(root)
     print()
-    print("In-order Traversal of the constructed Tree : ")
+    print("In-order Traversal of the constructed Tree: ")
     myTree.inOrder(root)
     print()
 
