@@ -1,4 +1,8 @@
-#include < iostream > #include < cstdio > #include < sstream > #include < algorithm > #define pow2(n)(1 << (n))
+#include < iostream >
+#include < cstdio >
+#include < sstream >
+#include < algorithm >
+#define pow2(n)(1 << (n))
 using namespace std;
 
 /*
