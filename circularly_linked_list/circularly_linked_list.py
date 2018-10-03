@@ -90,7 +90,7 @@ class CircularLinkedList:
                 break
             cur_node = cur_node.next
 
-        return linear_display
+        print linear_display
 
     def clear(self):
 
@@ -123,14 +123,14 @@ class CircularLinkedList:
 def main():
     cll = CircularLinkedList()
     cll.remove_head()
-    print cll.display()
+    cll.display()
     print cll.size()
     cll.insert_end(15)
     cll.insert_end(10)
-    print cll.display()
+    cll.display()
     print cll.size()
     cll.clear()
-    print cll.display()
+    cll.display()
     print cll.size()
 
 
