@@ -19,8 +19,8 @@ public class BubbleSort
     private void swap(int j)
     {
         int temp = arr.get(j);
-	    arr.set(j, arr.get(j + 1));
-	    arr.set(j+1, temp);
+        arr.set(j, arr.get(j + 1));
+        arr.set(j+1, temp);
     }
 
     private void bubbleSort()
