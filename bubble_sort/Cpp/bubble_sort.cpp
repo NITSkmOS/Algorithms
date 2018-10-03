@@ -33,12 +33,10 @@ void print_array(int arr[], int size) {
 
 // Driver program to test above functions
 int main() {
-	clrscr();
 	int arr[] = {64, 34, 25, 12, 22, 11, 90};
 	int n = sizeof(arr) / sizeof(arr[0]);
 	bubble_sort(arr, n);
 	cout << "Sorted array: " << endl;
 	print_array(arr, n);
-	getch();
 	return 0;
 }
