@@ -26,13 +26,6 @@ class CircularLinkedList:
         '''
         Places an element at the start of the circularly linked list.
 
-        Simulation:
-        (_) _ _ _ _ _ _ 	 _ _ _ _ _ _ _
-            ^		  |		 ^			 |
-            |		  |	==>  |           |
-            |		  |		 |   		 |
-            |----------	     |------------
-
         '''
 
         new_node = Node(data)
@@ -49,14 +42,6 @@ class CircularLinkedList:
     def insert_end(self, data):
         '''
         Places an element at the end of the circularly linked list.
-
-        Simulation:
-        _ _ _ _ _ _ (_)		 _ _ _ _ _ _ _
-        ^		  |			 ^			 |
-        |		  |		==>  |           |
-        |		  |		     |   		 |
-        |----------			 |------------
-
         '''
 
         new_node = Node(data)
@@ -74,14 +59,6 @@ class CircularLinkedList:
     def remove_head(self):
         '''
         Removes the head node.
-
-        Simulation:
-        _ _ _ _ _ _(_) 		  _ _ _ _ _ _
-        ^		    |		  ^			|
-        |		    |	==>   |         |
-        |			|		  |   		|
-        |------------	 	  |------------
-
         '''
 
         if self.size() == 0:
@@ -98,16 +75,6 @@ class CircularLinkedList:
     def display(self):
         '''
         Displays list from the start to the end.
-
-        Simulation:
-
-        1 2 3 4 5 6 7 => Order of output
-        _ _ _ _ _ _ _
-        ^		    |
-        |		    |
-        |			|
-        |------------
-
         '''
 
         if self.size() == 0:
@@ -132,15 +99,6 @@ class CircularLinkedList:
     def size(self):
         '''
         Returns size of Circularly Linked List.
-
-        Simulation:
-
-        1 2 3 4 5 6(7) => Size
-        _ _ _ _ _ _ _
-        ^		    |
-        |		    |
-        |			|
-        |------------
 
         '''
 
