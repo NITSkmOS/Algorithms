@@ -13,3 +13,4 @@
 .vscode/
 # coala
 *.orig
+/bin/
