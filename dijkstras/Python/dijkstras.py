@@ -27,16 +27,16 @@ def dijkstras(G, s):
 
 def main():
     G = {1: [[3, 4]],
-        2: [[5, 2]],
-        3: [[4, 2], [5, 4], [2, 6]],
-        4: [],
-        5: [[2, 2]]}
+         2: [[5, 2]],
+         3: [[4, 2], [5, 4], [2, 6]],
+         4: [],
+         5: [[2, 2]]}
     s = 1
-    dist = dijkstras(G,s)
+    dist = dijkstras(G, s)
     for i in dist:
         if i != s:
             print(dist[i])
 
-    
+
 if __name__ == '__main__':
     main()
