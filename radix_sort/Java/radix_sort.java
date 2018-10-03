@@ -8,7 +8,6 @@ public class ExampleRadixSort {
         for (int h : num)
             System.out.print(h + " ");
     }
-  
     public static void radixsort(int[] input) {
         List<Integer>[] buckets = new ArrayList[10];
         for (int i = 0; i < buckets.length; i++) {
