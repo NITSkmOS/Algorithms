@@ -1,6 +1,5 @@
 def max_sub_array_sum(a, size):
 
-
     max_so_far = -9999999 - 1
     max_ending_here = 0
     for i in range(0, size):
