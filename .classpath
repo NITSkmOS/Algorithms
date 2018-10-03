@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="avl_tree/Java"/>
+	<classpathentry kind="src" path="euclidean_gcd/Java"/>
+	<classpathentry kind="src" path="quicksort/Java"/>
+	<classpathentry kind="src" path="stack/Java"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
