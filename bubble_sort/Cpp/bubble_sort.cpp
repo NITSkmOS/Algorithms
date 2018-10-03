@@ -18,6 +18,9 @@ void bubble_sort(int arr[], int n) {
 				swapped = true;
 			}
 		}
+		
+		if (swapped == false)
+			break;
 	}
 }
 
@@ -25,7 +28,7 @@ void bubble_sort(int arr[], int n) {
 void print_array(int arr[], int size) {
 	int i;
 	for (i = 0; i < size; i++)
-		cout << arr[i];
+		cout << arr[i] << " ";
 	cout << endl;
 }
 
@@ -34,7 +37,7 @@ int main() {
 	int arr[] = {64, 34, 25, 12, 22, 11, 90};
 	int n = sizeof(arr) / sizeof(arr[0]);
 	bubble_sort(arr, n);
-	cout << "Sorted array: "<< endl;
+	cout << "Sorted array: " << endl;
 	print_array(arr, n);
 	return 0;
 }
