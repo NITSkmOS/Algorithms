@@ -1,12 +1,10 @@
 package com.javatutorial;
-  
 import java.util.ArrayList;
 import java.util.List;
-  
 public class ExampleRadixSort {
     public static void main(String[] args) {
         int[] num = {170, 45, 75, 90, 802, 2, 24, 66,23,234,3,232,44};
-        radixsort(num); 
+        radixsort(num);
         for (int h : num)
             System.out.print(h + " ");
     }
