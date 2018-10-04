@@ -93,9 +93,9 @@ class SkipList:
         for i in range(len(self.head.next)-1, -1, -1):
             x=self.head
             while(x.next[i]!=None):
-                print x.next[i].elem,
+                print(x.next[i].elem,)
                 x=x.next[i]
-            print ''
+            print('')
 if __name__ == "__main__":
     skipList = SkipList()
     print("Insertion Started")
