@@ -1,5 +1,5 @@
 public class RadixSort {
-	public static void sort( int[] a) {
+    public static void sort( int[] a) {
         int i, m = a[0], exp = 1, n = a.length;
         int[] b = new int[n];
         for (i = 1; i < n; i++)
