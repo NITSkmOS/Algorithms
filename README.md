@@ -22,6 +22,7 @@ This repository contains examples of various algorithms written on different pro
 | [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        | [:octocat:](bubble_sort/C)            | [:octocat:](bubble_sort/Cpp)          |                                       |                                       |
 | [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           | [:octocat:](shell_sort/C)             |                                       |                                       | [:octocat:](shell_sort/Python)        |
 | [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |                                       |                                       | [:octocat:](heap_sort/python)        |
+| [Maximum Subarray Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem)              |                                       |                                       |                                       | [:octocat:](/maximum_subarray/Python)|
 
 
 ## Implemented Data Structures
