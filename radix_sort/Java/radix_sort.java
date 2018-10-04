@@ -15,13 +15,13 @@ public class RadixSort {
                 b[--bucket[(a[i] / exp) % 10]] = a[i];
             for (i = 0; i < n; i++)
                 a[i] = b[i];
-            exp *= 10;        
+            exp *= 10;
         }
-    }    
+    }
     public static void main(String[] args) {
         int[] num = {170, 45, 75, 90, 802, 2, 24, 66,23,234,3,232,44};
         sort(num);
         for (int h : num)
-            System.out.print(h + " ");                     
+            System.out.print(h + " ");
     }
 }
