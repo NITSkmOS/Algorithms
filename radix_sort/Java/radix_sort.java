@@ -1,4 +1,4 @@
-class Radix_sort {
+class radix_sort {
     public static void sort( int[] a) {
         int i, m = a[0], exp = 1, n = a.length;
         int[] b = new int[n];
