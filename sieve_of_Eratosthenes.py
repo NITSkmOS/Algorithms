@@ -1,6 +1,6 @@
 def sieve_of_eratosthenes(n):
-    
-    prime = [True for i in range(n+1)]
+
+    prime = [True] * (n + 1)
     p = 2
     while (p * p <= n):
         # If prime[p] is not changed, then it is a prime
@@ -15,7 +15,7 @@ def sieve_of_eratosthenes(n):
             print(p)
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     n = 30
     print("Following are the prime numbers smaller")
     print("than or equal to", n)
