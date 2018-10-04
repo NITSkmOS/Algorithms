@@ -2,7 +2,8 @@
 Bubble sort
 
 It is the most common sort algorithm.
-It simply finds the first element and place at the first by comparing all elements.
+It simply finds the first element and place at 
+the first by comparing all elements.
 
 you should use the sort built in python instead of this code.
 """
