@@ -19,7 +19,7 @@ class radix_sort {
         }
     }
     public static void main(String[] args) {
-        int[] num = {170, 45, 75, 90, 802, 2, 24, 66,23,234,3,232,44};
+        int[] num = { 170, 45, 75, 90, 802, 2, 24, 66, 23, 234, 3, 232, 44 };
         sort(num);
         for (int h : num)
             System.out.print(h + " ");
