@@ -21,7 +21,8 @@ def euclidean_gcd_recursive(first, second):
 
 
 def main():
-    first, second = map(int, input('Enter 2 integers: ').split())
+    inp = '20 30'
+    first, second = map(int, inp.split())
     print('Division-based: GCD of {} and {} is: {}'.format(first,
                                                            second,
                                                            euclidean_gcd(
