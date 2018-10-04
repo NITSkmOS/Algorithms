@@ -4,7 +4,7 @@ def sieve_of_eratosthenes(n):
     p = 2
     while (p * p <= n):
         # If prime[p] is not changed, then it is a prime
-        if (prime[p] == True):
+        if (prime[p] is True):
             # Update all multiples of p
             for i in range(p * 2, n+1, p):
                 prime[i] = False
@@ -17,6 +17,4 @@ def sieve_of_eratosthenes(n):
 
 if __name__ == '__main__':
     n = 30
-    print("Following are the prime numbers smaller")
-    print("than or equal to", n)
-    sieve_of_eratosthenes(n)
+    print("Following are the prime numbers smaller than or equal to {}: {}".format(n, sieve_of_eratosthenes(n))
