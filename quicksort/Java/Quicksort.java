@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 class Quicksort {
-    private static void quicksortArray(int[] array, int low, int high) {
+    static void quicksortArray(int[] array, int low, int high) {
         int i = low;
         int j = high;
 
