@@ -1,4 +1,14 @@
 public class LinkedList<T> {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<String>("head");
+        list.add("second");
+        list.add("third");
+        list.add("last");
+        System.out.println(list.length()); // should be 4
+        System.out.println(list.remove("third")); // should print "third"
+        System.out.println(list.length()); // should be 3
+    }
+
     private Node<T> head;
 
     public LinkedList(T head) {
