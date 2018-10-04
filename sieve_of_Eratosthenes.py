@@ -14,8 +14,11 @@ def sieve_of_eratosthenes(n):
         if prime[p]:
             print(p)
 
-
-if __name__ == '__main__':
+def main():
     n = 30
     print("Following are the prime numbers smaller than "
           " or equal to {}: {}".format(n, sieve_of_eratosthenes(n))
+
+
+if __name__ == '__main__':
+    main()
