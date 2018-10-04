@@ -3,10 +3,14 @@
 
 [all]
 max_line_length = 80
-use_spaces = True
 
-[all.space_checks]
-files = **/*.py, **/*.java, **/*.c, **/*.h, **/*.cpp
+[all.cpp]
+files = **/*.c, **/*.cpp
+bears = SpaceConsistencyBear
+use_spaces = False
+
+[all.pyjava]
+files = **/*.py, **/*.java
 bears = SpaceConsistencyBear
 use_spaces = True
 
@@ -15,11 +19,11 @@ files = **/*.py
 bears = PEP8Bear, PycodestyleBear
 default_actions = PEP8Bear: ApplyPatchAction
 
-[all.cpp]
-files = **/*.cpp, **/*.h, **/*.c
-ignore = queue/Cpp/Queue.h
+[all.cpplint]
+files = **/*.cpp, **/*.c
 bears = CPPLintBear
-cpplint_ignore = build/namespaces, legal/copyright, runtime/references
+cpplint_ignore = build/namespaces, legal/copyright, runtime/references,
+                 whitespace/tab, whitespace/comments
 
 [all.commit]
 bears = GitCommitBear

@@ -20,7 +20,8 @@ This repository contains examples of various algorithms written on different pro
 | [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)                                          |                                       |                                       |                                       | [:octocat:](radix_sort/Python)        |
 | [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)                          |                                       | [:octocat:](binary_search/Cpp)        |                                       | [:octocat:](binary_search/Python)     |
 | [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)                                        | [:octocat:](bubble_sort/C)            | [:octocat:](bubble_sort/Cpp)          |                                       |                                       |
-| [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           |                                       |                                       |                                       | [:octocat:](shell_sort/Python)        |
+| [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           | [:octocat:](shell_sort/C)             |                                       |                                       | [:octocat:](shell_sort/Python)        |
+| [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |                                       |                                       | [:octocat:](heap_sort/python)        |
 
 
 ## Implemented Data Structures
@@ -29,8 +30,8 @@ This repository contains examples of various algorithms written on different pro
 |:----------------------------------------------------------------------------------------------- |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
 | [Queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))                               |                                       | [:octocat:](queue/Cpp)                |                                       |                                       |
 | [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))                               |                                       |                                       | [:octocat:](stack/Java)               | [:octocat:](stack/Python)             |
-| [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                       | [:octocat:](linked_list/java)         |                                       |
-| [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               |                                       | [:octocat:](avl_tree/Java)            |                                       |
+| [Linear Linked List](https://en.wikipedia.org/wiki/Linked_list)                                 | [:octocat:](linked_list/C)            |                                       | [:octocat:](linked_list/java)         | [:octocat:](linked_list/Python)       |
+| [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               |                                       | [:octocat:](avl_tree/Java)            | [:octocat:](avl_tree/Python)          |
 
 
 ## Sample Run
