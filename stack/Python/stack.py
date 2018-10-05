@@ -37,7 +37,12 @@ class Stack:
         :return:    last element of the stack.
         """
 
-        return self.stack[len(self.stack)-1]
+        if len(self.stack) <= 0:
+            # Raise an error if stack is empty.
+            return "No element in the Stack"
+
+        else:
+            return self.stack[len(self.stack)-1]
 
     def display(self):
         """
