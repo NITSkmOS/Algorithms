@@ -13,7 +13,7 @@ class Queue:
 
     def size(self):
         return len(self.queue)
-    
+
     def front(self):
         return self.queue[self.size()-1] 
 
