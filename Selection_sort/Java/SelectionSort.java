@@ -1,5 +1,3 @@
-package demos;
-
 import java.util.Scanner;
 
 public class SelectionSort {
