@@ -44,6 +44,7 @@ This repository contains examples of various algorithms written on different pro
 | C               | <pre>gcc [filename.c]<br>./a.out  # unix<br>a.exe  # windows</pre>     |
 | CPP             | <pre>g++ [filename.cpp]<br>./a.out # unix<br>a.exe # windows</pre>     |
 | Java            | <pre>javac [filename.java]<br>java [filename]</pre>                    |
+| Elixir          | <pre>elixir [filename.exs]</pre>                    |
 
 
 ## Contributing
