@@ -17,14 +17,16 @@ class Queue:
     def front(self):
         return self.items[self.size()-1] 
 
+def main():
+    q=Queue()
+    q.enqueue(4)
+    q.enqueue('dog')
+    q.enqueue(True)
+    print("Size of queue is : " + str(q.size()))
+    print("Element on front is : " + str(q.front()))
+    print (str(q.front()) + " is Deleted ")
+    q.dequeue()
 
-q=Queue()
-q.enqueue(4)
-q.enqueue('dog')
-q.enqueue(True)
-print("Size of queue is : " + str(q.size()))
-print("Element on front is : " + str(q.front()))
-print (str(q.front()) + " is Deleted ")
-q.dequeue()
 
-
+if __name__ == '__main__':
+    main()
