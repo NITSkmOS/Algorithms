@@ -1,24 +1,25 @@
 class Queue:
     def __init__(self):
-        self.items = []
+        self.queue = []
 
-    def isEmpty(self):
-        return self.items == []
+    def is_empty(self):
+        return self.queue == []
 
     def enqueue(self, item):
-        self.items.insert(0,item)
+        self.queue.insert(0, item)
 
     def dequeue(self):
-        return self.items.pop()
+        return self.queue.pop()
 
     def size(self):
-        return len(self.items)
+        return len(self.queue)
     
     def front(self):
-        return self.items[self.size()-1] 
+        return self.queue[self.size()-1] 
+
 
 def main():
-    q=Queue()
+    q = Queue()
     q.enqueue(4)
     q.enqueue('dog')
     q.enqueue(True)
