@@ -1,17 +1,14 @@
 // Floyd-Warshall Algorithm: all pair shortest path
 #include <iostream>
-#include <vector>
 #include <climits>
 using namespace std;
 
 #define INF 999999999
-#define MAXN 1001
 
 int main() {
 	freopen("input.txt", "r", stdin);
-	int i, j, k, n, m;
+	int graph[1001][1001], i, j, k, n, m;
 	cin >> n >> m;	// number of vertices and edges respectively
-	int graph[MAXN][MAXN];
 
 	for(i = 1; i <= n; i++) {
 		for(j = 1; j <= n; j++)
@@ -51,7 +48,7 @@ int main() {
 /*
 Input:-
 First line contain two space separated integer n and m
-where n(1 <= n <= 1000) is the number of vertices and m is the number
+where n is the number of vertices and m is the number
 of edges.Next m lines contains three space seprated integers
 u, v and w which represents that there is an edge between u and v
 and weight of the edge is w
