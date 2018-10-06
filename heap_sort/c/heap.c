@@ -26,9 +26,9 @@ void sift(MinHeap* h,int node)
 	do
 	{
 		son=0;
-		if(2*node+1<=h->N)
+		if(2*node+1 <= h->N)
 		{
-			if(h->heap[2*node+1]< h->heap[2*node])
+			if(h->heap[2*node+1] < h->heap[2*node])
 			{
 				son=2*node+1;
 			}
@@ -37,12 +37,12 @@ void sift(MinHeap* h,int node)
 				son=2*node;
 			}
 		}
-		else if(2*node<=h->N)
+		else if(2*node <= h->N)
 		{
 			son=2*node;
 		}
 
-		if(h->heap[node]<h->heap[son])
+		if(h->heap[node] < h->heap[son])
 		{
 			son=0;
 		}
@@ -58,7 +58,7 @@ void sift(MinHeap* h,int node)
 
 void percolate(MinHeap* h,int node)
 {
-	while(node>1 && h->heap[node]<h->heap[node/2])
+	while(node > 1 && h->heap[node] < h->heap[node/2])
 	{
 		swap_nodes(h,node,node/2);
 		node/=2;
