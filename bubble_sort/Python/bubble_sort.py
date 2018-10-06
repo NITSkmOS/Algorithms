@@ -1,7 +1,7 @@
 def bubble_sort(arr):
-    '''
+    """
     Function to sort a list of integers using bubble sort algorithm
-    '''
+    """
     for i in range(len(arr)-1):
         for j in range(len(arr)-i-1):
             if arr[j]>arr[j+1]:

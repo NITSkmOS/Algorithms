@@ -1,5 +1,5 @@
 def knapsack(v, w, n, W):
-    '''
+    """
     Function solves 0/1 Knapsack problem
     Function to calculate frequency of items to be added to knapsack to maximise value
     such that total weight is less than or equal to W
@@ -7,7 +7,7 @@ def knapsack(v, w, n, W):
     :param w: set of weights of n objects, first element is useless because relevant weights are assumed to begin from index 1
     :param n: number of items
     :pram W: maximum weight allowd by knapsack
-    '''
+    """
     m = [[0 for j in range(W+1)] for i in range(n+1)]
     for j in range(W+1):
         m[0][j] = 0
