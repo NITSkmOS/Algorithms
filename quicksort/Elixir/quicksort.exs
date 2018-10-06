@@ -2,7 +2,7 @@ defmodule Sort do
   @moduledoc """
   QuickSort Algorithm
   - If the list is empty, return the list and terminate.
-  - If the list lenght is one, return the list and terminate.
+  - If the list length is one, return the list and terminate.
   - Choose a pivot element in the list.
   - Take all of the elements that are less than or equal to the pivot and use quicksort on them.
   - Take all of the elements that are greater than the pivot and use quicksort on them.
