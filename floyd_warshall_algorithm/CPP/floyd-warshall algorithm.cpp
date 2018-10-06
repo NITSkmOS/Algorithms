@@ -1,4 +1,4 @@
-//Floyd-Warshall Algorithm: all pair shortest path
+// Floyd-Warshall Algorithm: all pair shortest path
 #include <iostream>
 #include <climits>
 using namespace std;
@@ -7,33 +7,33 @@ using namespace std;
 
 int main() {
 	int graph[1001][1001], i, j, k, n, m;
-	cin >> n >> m;	//number of vertices and edges respectively
+	cin >> n >> m;	// number of vertices and edges respectively
 
 	for(i = 1; i <= n; i++) {
 		for(j = 1; j <= n; j++)
-			if(i == j)	graph[i][j] = 0;	//Shortest distance between (i,i) is 0
+			if(i == j)	graph[i][j] = 0;	// Shortest distance between (i,i) is 0
 			else
-				graph[i][j] = INF;		//Initializing other distances as infinite
+				graph[i][j] = INF;	// Initializing other distances as infinite
 	}
 
 	for(i = 1; i <= m; i++) {
 		int u, v, w;
 		cin>> u >> v >> w;
-		graph[u][v] = w;				//input graph
-		graph[v][u] = w;				//Shortest distance between (i,j) using atmost one edge
+		graph[u][v] = w;	// input graph
+		graph[v][u] = w;	// Shortest distance between (i,j) using atmost one edge
 	}
 
 
 	for(k = 1; k <= n; k++) {
 		for(int u = 1; u <= n; u++) {
 			for(int v = 1;v <= n; v++) {
-				//Shortest distance between (i,j) using atmost k edges
+				// Shortest distance between (i,j) using atmost k edges
 				graph[u][v] = min(graph[u][v], graph[u][k] + graph[k][v]);
 			}
 		}
 	}
 
-	//Resulting all pair shortest path in given graph
+	// Resulting all pair shortest path in given graph
 	for(int u = 1; u <= n; u++) {
 		for(int v = 1; v <= n; v++) {
 			cout << graph[u][v] << " ";
