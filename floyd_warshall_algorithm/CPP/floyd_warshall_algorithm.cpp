@@ -10,7 +10,7 @@ int main() {
 	int i, j, k, n, m;
 	cin >> n >> m;	// number of vertices and edges respectively
 	int graph[n+1][n+1];
-	
+
 	for(i = 1; i <= n; i++) {
 		for(j = 1; j <= n; j++)
 			if(i == j)	graph[i][j] = 0;	// Shortest distance between (i,i) is 0
