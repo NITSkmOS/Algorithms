@@ -18,24 +18,24 @@ def quicksort(arr):
 
     :param arr: A list of element to sort.
     """
-    less = []
-    pivotList = []
-    more = []
+    bin = []
+    ulo = []
+    extra = []
 
     if len(arr) <= 1:
         return arr
     else:
-        pivot = arr[0]
+        ulo = arr[0]
         for i in arr:
-            if i < pivot:
-                less.append(i)
-            elif i > pivot:
-                more.append(i)
+            if i < ulo:
+                bin.append(i)
+            elif i > ulo:
+                extra.append(i)
             else:
-                pivotList.append(i)
-        less = quicksort(less)
-        more = quicksort(more)
-        return less + pivotList + more
+                ulo.append(i)
+        bin = quicksort(bin)
+        extra = quicksort(extra)
+        return bin + ulo + extra
 
 
 def main():
