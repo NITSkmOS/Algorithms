@@ -1,0 +1,57 @@
+#include <stdio.h>
+#define MAX_SIZE 101
+int A[MAX_SIZE];
+int front = -1;
+int rear = -1;
+
+int Isempty(){
+    if(front==-1 && rear==-1){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+void Enqueue(int x){
+    int r;
+    r=Isempty();
+    if(r==1){
+        front=0;
+    }
+    if(rear == MAX_SIZE - 1){
+        printf("Error: Queue Overflow\n");
+        return;
+    }
+    A[++rear]=x;
+}
+void Dequeue(){
+    if(front==-1){
+    printf("Error: No elements to be deleted\n");
+    return;
+    }
+    front++;
+}
+int Front(){
+    return A[front];
+}
+void Print(){
+    int i;
+    printf("Queue: ");
+    for(i=front;i<=rear;i++){
+        printf("%d ", A[i]);
+    }
+    printf("\n");
+}
+int main(){
+    Enqueue(2);
+    Print();
+    Enqueue(4);
+    Print();
+    Enqueue(6);
+    Print();
+    Dequeue();
+    Print();
+    Enqueue(9);
+    Print();
+    return 0;
+}
