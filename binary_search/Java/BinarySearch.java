@@ -9,15 +9,11 @@ class BinarySearch {
         int i = 0;
         int f = nums.length - 1;
         while(i <= f) {
-            
             int mid = i + (f - 1) / 2; //find the middle
-
             //check the middle
             if(nums[mid] == x) return mid;
-
             //if x is greater than the mid, ignore the left
             if(nums[mid] < x) i = mid + 1;
-            
             //otherwise ignore the right
             else f = mid - 1;
         }
