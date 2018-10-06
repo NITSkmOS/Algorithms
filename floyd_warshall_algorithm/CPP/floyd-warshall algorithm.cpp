@@ -26,7 +26,7 @@ int main() {
 
 	for(k = 1; k <= n; k++) {
 		for(int u = 1; u <= n; u++) {
-			for(int v = 1;v <= n; v++) {
+			for(int v = 1; v <= n; v++) {
 				// Shortest distance between (i,j) using atmost k edges
 				graph[u][v] = min(graph[u][v], graph[u][k] + graph[k][v]);
 			}
