@@ -28,7 +28,7 @@ int main() {
 		for(int u = 1; u <= n; u++) {
 			for(int v = 1;v <= n; v++) {
 				//Shortest distance between (i,j) using atmost k edges
-				graph[u][v] = min(graph[u][v], graph[u][k] + graph[k][v]);	
+				graph[u][v] = min(graph[u][v], graph[u][k] + graph[k][v]);
 			}
 		}
 	}
@@ -46,8 +46,8 @@ int main() {
 
 /*
 Input:-
-First line contain two space separated integer n and m 
-where n is the number of vertices and m is the number 
+First line contain two space separated integer n and m
+where n is the number of vertices and m is the number
 of edges.Next m lines contains three space seprated integers
 u, v and w which represents that there is an edge between u and v
 and weight of the edge is w
