@@ -10,14 +10,14 @@ int main()
 	scanf("%d",&n);
 	int v[MAXN];
 	int i;
-	for(i=0;i<n;i++)
+	for(i=0; i < n; i++)
 	{
 		scanf("%d",&v[i]);
 	}
 
 	heapsort(v,n);
 
-	for(i=0;i<n;i++)
+	for(i=0; i < n; i++)
 	{
 		printf("%d ",v[i]);
 	}
@@ -28,13 +28,13 @@ void heapsort(int* v,int len)
 {
 	MinHeap aux;
 
-
-	for(int i=0;i<len;i++)
+	int i;
+	for(i=0; i < len; i++)
 	{
 		add(&aux,v[i]);
 	}
 
-	for(int i=0;i<len;i++)
+	for(i=0; i < len; i++)
 	{
 		v[i]=get_value_at_node(&aux,1);
 		rmv(&aux,1);
