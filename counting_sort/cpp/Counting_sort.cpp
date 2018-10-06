@@ -43,12 +43,8 @@ int main() {
   };
   int n = sizeof(arr) / sizeof(arr[0]);
   int RANGE = 9;
-
   print(arr, n);
-
   countingSort(arr, n, RANGE);
-
   print(arr, n);
-
   return 0;
 }
