@@ -6,6 +6,7 @@ using namespace std;
 #define INF 999999999
 
 int main() {
+	freopen("input.txt", "r", stdin);
 	int graph[1001][1001], i, j, k, n, m;
 	cin >> n >> m;	// number of vertices and edges respectively
 
