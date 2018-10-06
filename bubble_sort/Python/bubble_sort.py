@@ -10,5 +10,5 @@ a = [76,74,63,74,24,93,25]
 
 bubbleSort(a)
 
-print ("Sorted array is:")
+print("Sorted array is:")
 print(a)
