@@ -1,45 +1,93 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
-typedef struct Node {
+typedef struct node{
 	int data;
-	struct Node* next;
-} Node;
+	struct node* link;
+}*node;
 
-void createList(Node **START) {
-	*START = NULL;
-	printf("List created successfully\n");
-	return;
+node getnode(){
+	node p=(node*)malloc(sizeof(node));
+	p->link=NULL;
+	p->data=-99;
+	return p;
 }
 
-void insert(Node **START, int data) {
-	Node *new_node = (Node *)malloc(sizeof(Node));	// Ignore CPPLintBear
-	new_node->data = data;
-	if (*START == NULL) {
-		new_node->next = NULL;
-		*START = new_node;
-	} else {
-		new_node->next = *START;
-		*START = new_node;
+void insertF(int ele, node h){
+	if(h->link==h){
+		h->link=getnode();
+		h->link->data=ele;
+		h->link->link=h;
+	}
+	else{
+		node temp=h->link;
+		node p=getnode();
+		p->data=ele;
+		p->link=temp;
+		h->link=p;
 	}
 }
 
-void printList(Node **START) {
-	Node *temp = *START;
-	while (temp != NULL) {
-		printf("%d ", temp->data);
-		temp = temp->next;
+void insertL(int ele, node h){
+	if(h->link==h){
+		h->link=getnode();
+		h->link->data=ele;
+		h->link->link=h;
+	}
+	else{
+		node p=h;
+		while(p->link!=h)
+			p=p->link;
+		node l=getnode();
+		p->link=l;
+		l->data=ele;
+		l->link=h;
+	}
+}
+
+void deleteF(node h){
+	if(h->link==h) printf("\nEmpty List\n");
+	else{
+		node p=h->link;
+		if(p->link==h){
+			h->link=h;
+			printf("Value deleted is \'%d\'\n",p->data);
+			free(p);
+		}
+		else{
+			node temp=(h->link)->link;
+			printf("Value deleted is \'%d\'\n",(h->link)->data);
+			free(h->link);
+			h->link=temp;
+		}
+	}
+}
+
+void deleteL(node h){
+	if(h->link==h) printf("\nEmpty List\n");
+	else{
+		node p=h->link;
+		if(p->link==h){
+			h->link=h;
+			printf("Value deleted is \'%d\'\n",p->data);
+			free(p);
+		}
+		else{
+			node p=h;
+			while(((p->link)->link)!=h) p=p->link;
+			printf("Value deleted is \'%d\'\n",(p->link)->data);
+			free(p->link);
+			p->link=h;
+		}
+	}
+}
+
+void disp(node h){
+	node p=h->link;
+	if(p==h) printf("List Empty!");
+	while(p!=h){		
+		printf("%d\t",p->data);
+		p=p->link;
 	}
 	printf("\n");
-}
-
-int main() {
-	Node* START;
-	createList(&START);
-	insert(&START, 12);
-	insert(&START, 10);
-	insert(&START, 9);
-	insert(&START, 56);
-	insert(&START, 17);
-	printList(&START);
 }
