@@ -1,65 +1,38 @@
-/*
-Simple stack implementation using Array
-
-inputFile format:
-<number of elements>
-<e1> <e2> .. <eN>
-
-Eg. 
-5
-1 2 3 4 5
-
-*/
-
 #include<stdio.h>
 #include<stdlib.h>
-
-#define INPUTFILE "inputFile.txt"
-#define MAX 256
-
-int arr[MAX], n, top = -1;
-FILE *fp;
-
-void push()
+void main()
 {
-  if(top == n)
+  void push(int *arr, int *top,int n, int i);
+  int pop(int *arr, int *top);
+  // number of elements
+  int n = 6;
+  int arr[n], top = -1;
+  // push all elements into the stack
+  for(int i = 0; i < n; i++)
+  {
+    push(arr, &top, n, i);
+  }
+  printf("\n");
+  // pop elements one by one.
+  for(int i = 0; i < n; i++)
+  {
+    printf("%d ", pop(arr, &top));
+  }
+}
+void push(int *arr, int *top,int n, int i)
+{
+  if(*top == n)
   printf("\nStack is full. \n");
   else
-  fscanf(fp, "%d", &arr[++top]);
+  arr[++(*top)] = i;
 }
-
-int pop()
+int pop(int *arr, int *top)
 {
-  if(top == -1)
+  if(*top == -1)
   {
     printf("\n Stack empty!\n");
     exit(1);
-}
+  }
   else
-  return(arr[top--]);
-}
-
-void main()
-{
-  if((fp = fopen(INPUTFILE, "r")) == NULL)
-  {
-    perror("Inputfile: ");
-    exit(1);
-  }
-
-  fscanf(fp, "%d", &n);
-  if(n > MAX)
-  {
-    printf("Number of elements, exceeds the limit. \n");
-    exit(1);
-  }
-  for(int i = 0; i < n; i++)
-  push();
-
-  printf("\n");
-
-  for(int i = 0; i < n; i++)
-  {
-    printf("%d ", pop());
-  }
+  return(arr[(*top)--]);
 }
