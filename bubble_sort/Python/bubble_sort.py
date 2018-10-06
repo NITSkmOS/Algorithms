@@ -6,4 +6,12 @@ def bubble_sort(a_list):
                 a_list[k] = a_list[k+1]
                 a_list[k+1] = temp
     return a_list
-                
+
+def main():
+    arr = [2, 3, 0, 4]
+    sorted_arr = bubble_sort(arr)
+    print(sorted_arr)
+
+
+if __name__ == '__main__':
+    main()
