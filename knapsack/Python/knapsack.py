@@ -14,18 +14,22 @@ def knapsack(v, w, n, W):
 
     for i in range(1, n+1):
         for j in range(W+1):
-            if w[i]>j:
+            if w[i] > j:
                 m[i][j] = m[i-1][j]
             else:
                 m[i][j] = max(m[i-1][j], m[i-1][j-w[i]]+v[i])
+
     return m[n][W]
+
 
 def main():
     v = [0, 1, 2, 3, 4, 5]
     w = [0, 5, 6, 2, 3, 4]
     n = 5
     W = 8
-    print("Maximum value possible in given weight limit: "+str(knapsack(v, w, n, W)))
+    print("Maximum value possible in given weight limit: ", 
+        str(knapsack(v, w, n, W)))
+
 
 if __name__ == '__main__':
     main()
