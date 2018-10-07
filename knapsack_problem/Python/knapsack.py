@@ -15,7 +15,7 @@ def knapsack(profit, weight, capacity):
     :return: maximum profit and the fraction of items
     """
 
-    # array of profit/weight ratio
+    # ratio is array of profit/weight ratio
     ratio = [v / w for v, w in zip(profit, weight)]
 
     # a list of (0, 1, ..., n-1)
