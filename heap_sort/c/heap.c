@@ -40,7 +40,7 @@ void sift(MinHeap* h, int node) {
 			swap_nodes(h, node, son);
 			node = son;
 		}
-	} while(son);
+	} while (son);
 }
 
 void percolate(MinHeap* h, int node) {

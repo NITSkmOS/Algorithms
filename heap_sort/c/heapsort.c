@@ -29,7 +29,7 @@ void heapsort(int* v, int len) {
 		add(&aux, v[i]);
 	}
 
-	for(i=0; i < len; i++) {
+	for(i = 0; i < len; i++) {
 		v[i] = get_value_at_node(&aux, 1);
 		rmv(&aux, 1);
 	}
