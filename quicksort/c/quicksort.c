@@ -36,14 +36,8 @@ void quicksort(int number[25], int first, int last) {
 }
 
 int main() {
-	int i, count, number[25];
-
-	printf("How many elements are u going to enter?: ");
-	scanf("%d", &count);
-
-	printf("Enter %d elements: ", count);
-	for (i = 0; i < count; i++)
-		scanf("%d", &number[i]);
+	int i, count = 6; 
+	int number[25]={6, 5, 4, 3, 2, 1};
 
 	quicksort(number, 0, count-1);
 
