@@ -1,4 +1,4 @@
-#include "./heap.h"
+#include <heap_sort/c/heap.h>
 
 
 
