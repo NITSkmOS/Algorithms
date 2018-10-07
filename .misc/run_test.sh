@@ -41,3 +41,13 @@ for i in $(find . -name *.py -print | sort --unique); do
     python3 $i > /dev/null
     echo ""
 done
+
+echo "Testing Rust files..."
+for i in $(find . -name *.rs -print | sort --unique); do
+    echo "    Compiling $i - rustc $i -o r.out"
+    rustc $i -o r.out
+    echo "    Running $i - ./r.out > /dev/null"
+    ./r.out > /dev/null
+    rm -f r.out
+    echo ""
+done
