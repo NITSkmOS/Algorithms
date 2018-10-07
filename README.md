@@ -23,6 +23,7 @@ This repository contains examples of various algorithms written on different pro
 | [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           | [:octocat:](shell_sort/C)             |                                       |                                       | [:octocat:](shell_sort/Python)        |
 | [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |                                       |                                       | [:octocat:](heap_sort/python)        |
 | [Maximum Subarray Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem)              |                                       |                                       |                                       | [:octocat:](/maximum_subarray/Python)|
+| [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem)							  |	                                      |                                       |                                       | [:octocat:](knapsack_problem/Python)|
 
 
 ## Implemented Data Structures
