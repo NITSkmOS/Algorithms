@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "heap_sort/c/heap.h"
+#include "./heap.h"
 #define MAXN 100
 
 void heapsort(int* v, int len);
