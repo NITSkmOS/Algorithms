@@ -37,7 +37,7 @@ class CountSort {
 
         for (int i = 1; i < count_arr.length; i++) {
             count_arr[i] += count_arr[i - 1]; // rolling sum to get the count of numbers less than the
-            				      // current index in the original array
+                                     // current index in the original array
         }
 
         int[] sorted_arr = new int[arr.length]; // declare and initialize the sorted array so elements from
@@ -61,3 +61,4 @@ class CountSort {
         }
     }
 }
+
