@@ -36,7 +36,7 @@ void quicksort(int number[25], int first, int last) {
 }
 
 int main() {
-	int i, count = 6; 
+	int i, count = 6;
 	int number[25]={6, 5, 4, 3, 2, 1};
 
 	quicksort(number, 0, count-1);
