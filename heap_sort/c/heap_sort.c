@@ -19,12 +19,12 @@ void swap_nodes(MinHeap* h, int node1, int node2);
 
 int get_value_at_node(MinHeap* h, int node);
 
-void heapsort(int* v, int len);
+void heap_sort(int* v, int len);
 int main() {
 	//Driver program
 	int v[] = {45, 92, 54, 23, 6, 4, 12};
 	int n = sizeof(v) / sizeof(v[0]);
-	heapsort(v, n);
+	heap_sort(v, n);
 	int i;
 	for(i = 0; i < n; i++) {
 		printf("%d ", v[i]);
@@ -32,7 +32,7 @@ int main() {
 	return 0;
 }
 
-void heapsort(int* v, int len) {
+void heap_sort(int* v, int len) {
 	MinHeap aux;
 	aux.N = 0;
 	int i;
