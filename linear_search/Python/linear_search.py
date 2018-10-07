@@ -8,4 +8,3 @@ def linear_search(values, search_for):
             search_at = search_at + 1
 
     return search_res
-    
