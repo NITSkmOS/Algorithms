@@ -23,7 +23,7 @@ int main() {
 
 void heapsort(int* v, int len) {
 	MinHeap aux;
-
+	aux.N = 0;
 	int i;
 	for(i = 0; i < len; i++) {
 		add(&aux, v[i]);
