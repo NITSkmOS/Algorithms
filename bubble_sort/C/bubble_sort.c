@@ -5,7 +5,7 @@ void print_array(int[], int);
 void swap(int*, int*);
 
 int main() {
-	int arr[] = {45, 92, 54, 23, 6, 4, 12};
+	int arr[] = {45, 90, 54, 23, 6, 4, 12};
 	int n = sizeof(arr) / sizeof(arr[0]);
 	bubble_sort(arr, n);
 	printf("Sorted array: \n");
