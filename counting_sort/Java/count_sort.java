@@ -25,7 +25,7 @@ class CountSort {
          */
         int maximum_number = getMax(arr);              // get the max number in the array in order to declare count array.
         int[] count_arr = new int[maximum_number + 1]; // maximum_number + 1 as we need to correctly
-                                                        //map each index with the number in the array 
+                                                        //map each index with the number in the array
 
         for (int i = 0; i < count_arr.length; i++) {
             count_arr[i] = 0;
