@@ -1,10 +1,9 @@
 #include<stdio.h>
 #define MAXN 100
 #define MAX_NODES 100
-typedef struct
-{
-    int N;
-    int heap[MAX_NODES];
+typedef struct {
+	int N;
+	int heap[MAX_NODES];
 } MinHeap;
 
 void add(MinHeap* h, int value);
@@ -23,16 +22,10 @@ int get_value_at_node(MinHeap* h, int node);
 void heapsort(int* v, int len);
 int main() {
 	//Driver program
-	int n;
-	scanf("%d", &n);
-	int v[MAXN];
-	int i;
-	for(i = 0; i < n; i++) {
-		scanf("%d", &v[i]);
-	}
-
+	int v[] = {45, 92, 54, 23, 6, 4, 12};
+	int n = sizeof(v) / sizeof(v[0]);
 	heapsort(v, n);
-
+	int i;
 	for(i = 0; i < n; i++) {
 		printf("%d ", v[i]);
 	}
