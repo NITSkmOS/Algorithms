@@ -8,8 +8,8 @@ struct node {
 
 class linked_list {
     node * head, * tail;
-    public:
-        linked_list() //constructor
+ public:
+    linked_list() //constructor
     {
         head = NULL;
         tail = NULL;
