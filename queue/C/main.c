@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Queue-Contigous.h"
+#include "Queue-Contiguous .h"
 int main() {
     Queue myQueue;
     int temp,i;
