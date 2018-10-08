@@ -15,7 +15,7 @@ class Queue:
         return len(self.queue)
 
     def front(self):
-        return self.queue[self.size()-1] 
+        return self.queue[self.size()-1]
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     q.enqueue(True)
     print("Size of queue is : " + str(q.size()))
     print("Element on front is : " + str(q.front()))
-    print (str(q.front()) + " is Deleted ")
+    print(str(q.front()) + " is Deleted ")
     q.dequeue()
 
 
