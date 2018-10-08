@@ -5,11 +5,12 @@ void print_array(int[], int);
 void swap(int*, int*);
 
 int main() {
-	int arr[] = {45, 92, 54, 23, 6, 4, 12};
+	int arr[] = {45, 92, 54, 23, 6, 4, 12},i;
 	int n = sizeof(arr) / sizeof(arr[0]);
 	bubble_sort(arr, n);
 	printf("Sorted array: \n");
-	print_array(arr, n);
+	for (i = 0; i < n; i++)
+		printf("%d ", arr[i]);
 }
 
 /* Function to swap two numbers */
@@ -38,11 +39,4 @@ void bubble_sort(int arr[], int n) {
 	}
 }
 
-/* Function to print array */
-void print_array(int arr[], int size) {
-	int i;
-	for (i = 0; i < size; i++)
-		printf("%d ", arr[i]);
 
-	printf("\n");
-}
