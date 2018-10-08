@@ -1,3 +1,11 @@
+function main(){
+  var arr[10],i,e;
+    for(i=0;i<10;i++)
+        arr[i]=i;
+    e=5;
+    var found = binarySearch(arr,e);
+    window.console(found);
+}
 function binarySearch(arr, target) {
     let left = 0;
     let right = arr.length - 1;
