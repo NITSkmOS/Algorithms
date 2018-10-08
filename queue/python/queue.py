@@ -1,9 +1,9 @@
 class Queue:
     def __init__(self):
-        self.queue = []
+        self.queue=[]
 
     def is_empty(self):
-        return self.queue == []
+        return self.queue==[]
 
     def enqueue(self, item):
         self.queue.insert(0, item)
