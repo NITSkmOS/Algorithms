@@ -1,6 +1,6 @@
 class InsertionSort {
     /**
-     * Insertion sort proceduce. Sorts the array in increasing 
+     * Insertion sort proceduce. Sorts the array in increasing
      * order in place. Time - O(n2), space O(1)
      * @param arr the array to be sorted.
      */
