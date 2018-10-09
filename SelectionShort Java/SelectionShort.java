@@ -9,12 +9,12 @@ public class SelectionShort {
     }
      public static void Selection_Short (int [] number){
         for (int i=0 ; i<number.length ;i++){
-            int terkecil = number[i];
+            int shortest = number[i];
                 for (int j=i ; j<number.length ; j++){
                     if (number[j] <= number[i]){
                         number [i] = number [j];   
-                        number[j] = terkecil;
-                        terkecil = number[i];
+                        number[j] = shortest;
+                        shortest = number[i];
                     }
                 }
         }
