@@ -3,21 +3,22 @@
 
 
 void heapsort(int vector[], int size);
-void constructHeap(int vector[], int n);
+void contruct_heap(int vector[], int n);
 void swap( int *element1Ptr, int *element2Ptr );
 
 int main( void )
 {
+    //test
 	int *vector2 = ( int *)malloc(8*sizeof(int ));
     int vector[ 8 ] = { 8, 32, 15, 5, 0, -3, 7, 9 };
-    constructHeap( vector, 8 );
+    contruct_heap( vector, 8 );
     heapsort(vector, 8);
     for ( int i = 0; i < 8; i++ ) printf("%-4d", vector[ i ]);
     puts("");
 	vector2 = realloc(vector2, 9*sizeof(int ));
 }
 
-void constructHeap(int vector[], int n)
+void contruct_heap(int vector[], int n)
 {
     int i;
     int count;
@@ -37,7 +38,7 @@ void heapsort(int vector[], int size)
     while( size > 0 )
     {
         swap( &vector[0], &vector[size - 1]);
-        constructHeap( vector, --size);
+        contruct_heap( vector, --size);
     } 
 }
 
