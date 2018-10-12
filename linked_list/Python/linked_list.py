@@ -64,7 +64,7 @@ class LinkedList:
 
         return self.head.data
 
-    def getNode(self, i):
+    def get_node(self, i):
         """
         This method takes an index and finds the node residing.
 
@@ -106,7 +106,7 @@ class LinkedList:
         if self.is_empty():
             self.head = node
         else:
-            tail = self.getNode(self.list_size - 1)
+            tail = self.get_node(self.list_size - 1)
             tail.next_node = node
 
         self.list_size += 1
@@ -134,13 +134,13 @@ class LinkedList:
         if self.is_empty():
             raise NoSuchNodeException()
 
-        tail = self.getNode(self.list_size - 1)
+        tail = self.get_node(self.list_size - 1)
         tail_data = tail.data
 
         if self.list_size == 1:
             self.head = None
         else:
-            before_tail = self.getNode(self.list_size - 2)
+            before_tail = self.get_node(self.list_size - 2)
             before_tail.next_node = None
 
         self.list_size -= 1
@@ -160,16 +160,16 @@ class LinkedList:
 
 
 def main():
-    myList = LinkedList()
-    myList.add_first(10)
-    myList.add_first(20)
-    myList.add_first(30)
+    my_list = LinkedList()
+    my_list.add_first(10)
+    my_list.add_first(20)
+    my_list.add_first(30)
     print("Current List after adding 3 elements: ")
-    myList.print_list()
+    my_list.print_list()
 
-    myList.remove_last()
+    my_list.remove_last()
     print("Current List after removing last element: ")
-    myList.print_list()
+    my_list.print_list()
 
 
 if __name__ == "__main__":
