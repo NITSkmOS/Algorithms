@@ -1,0 +1,35 @@
+# Check your code locally using
+# `coala --apply-patches -n`
+
+[all]
+max_line_length = 80
+
+[all.cpp]
+files = **/*.c, **/*.cpp
+bears = SpaceConsistencyBear
+use_spaces = False
+
+[all.pyjava]
+files = **/*.py, **/*.java
+bears = SpaceConsistencyBear
+use_spaces = True
+
+[all.autopep8]
+files = **/*.py
+bears = PEP8Bear, PycodestyleBear
+default_actions = PEP8Bear: ApplyPatchAction
+
+[all.cpplint]
+files = **/*.cpp, **/*.c
+bears = CPPLintBear
+cpplint_ignore = build/namespaces, legal/copyright, runtime/references,
+                 whitespace/tab, whitespace/comments
+
+[all.commit]
+bears = GitCommitBear
+shortlog_trailing_period = False
+shortlog_regex = ([^:]*|[^:]+: [A-Z0-9*].*)
+body_close_issue = True
+body_close_issue_full_url = True
+body_close_issue_on_last_line = True
+body_enforce_issue_reference = False

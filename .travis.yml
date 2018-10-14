@@ -1,0 +1,15 @@
+dist: trusty
+sudo: required
+language: node_js
+node_js:
+  "7"
+
+install:
+  - sh .misc/apt_install.sh
+  - sh .misc/npm_install.sh
+  - sh .misc/pip3_install.sh
+
+script:
+  - sh .misc/run_test.sh
+  - coala --ci
+  - eclint check "**/*.{java,c,cpp}"
