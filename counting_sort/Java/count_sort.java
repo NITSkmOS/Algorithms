@@ -24,9 +24,9 @@ class count_sort {
          * @param arr the array to be sorted.
          */
         int maximum_number = getMax(arr); // get the max number in the array in order to declare count array.
+<<<<<<< HEAD:counting_sort/Java/count_sort.java
         int[] count_arr = new int[maximum_number + 1]; // maximum_number + 1 as we need to correctly
         //map each index with the number in the array
-
 
         for (int i = 0; i < count_arr.length; i++) {
             count_arr[i] = 0;
