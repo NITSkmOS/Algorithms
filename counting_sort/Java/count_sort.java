@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Collections;
 
-class CountSort {
+class count_sort {
  /**
   * Function to get maximum number in an array of integers.
   * @param arr the array from which maximum number is to be obtained.
@@ -16,7 +16,6 @@ class CountSort {
   return max;
  }
 
-<<<<<<< HEAD
     static int[] countSort(int[] arr) {
         /**
          * Function to sort the arrays based on the Counting sort alogrithm.
