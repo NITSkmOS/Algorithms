@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 //SMMR  author - Ravi Mishra
 /*
@@ -175,5 +174,5 @@ printf("\n");
 free(arr);
 free(arr1);
 free(arr2);
-getch();	
+getchar();	
 }
