@@ -1,4 +1,4 @@
-public class BubbleSortRecursive {
+public class bubble_sort {
     public static void main(String[] args){
     //Taking a sample array for sorting it.
         int[] nums = {12, 45, 23, 78, 67};
@@ -6,7 +6,7 @@ public class BubbleSortRecursive {
     //calling the method and passing the array in it.
         bubble(nums, nums.length);
     //Printing the sorted array
-        printSortedArray(nums);
+        print_sorted_array(nums);
     }
     //The recurisve method that takes in the array and the length of it.
     public static void bubble(int[] nums, int end){
@@ -27,7 +27,7 @@ public class BubbleSortRecursive {
     }
 
     //Method to print an array
-    public static void printSortedArray(int arr[]) {
+    public static void print_sorted_array(int arr[]) {
 
     //storing the length of an array using the .length function in Java
         int n = arr.length;
