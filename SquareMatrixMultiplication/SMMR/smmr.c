@@ -1,15 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 //SMMR  author - Ravi Mishra
-/*
-Multiplication of two square matrices using recursive calls.
-Theoritical time complexity = O(n^3)
-*/
+// Multiplication of two square matrices using recursive calls.Theoritical time complexity = O(n^3)
+
 int ** add(int **arr1,int **arr2,int size){
 // add two matrices arr1 and arr2 of dimension size x size and returns the result matrix 
-	int i,j;
-	for(i=0;i<size;i++){
-		for(j=0;j<size;j++)
+	int i, j;
+	for(i = 0; i < size; i++){
+		for(j = 0; j < size; j++)
 		{			
 			arr1[i][j] = arr1[i][j] + arr2[i][j];					
 		}		
@@ -19,14 +17,14 @@ return arr1;
 int** padding(int **arr1,int n){
 // adds a row and column having values 0 in input matrix of size nxn and returns matrix of size (n+1) x (n+1)
 //allocating space for matrix of size (n+1) x (n+1)
-	int **arr  = (int **)malloc((n+1) * sizeof(int *));
+	int **arr  = (int**)malloc((n+1) * sizeof(int *));
 	int i,j;
-		for (i=0; i<n+1; i++)
+		for (i = 0; i < n+1; i++)
      {		   
-        arr[i] = (int *)malloc((n+1) * sizeof(int));
-    }
+        arr[i] = (int*)malloc((n+1) * sizeof(int));
+     }
 	// copying input matrix to the allocated matrix with a added row and column	
- 	for(i=0;i<=n;i++){
+ 	for(i = 0; i <= n; i++){
 	for(j=0;j<=n;j++){
     if(i==n||j==n){
    	arr[i][j]=0;
@@ -38,7 +36,7 @@ int** padding(int **arr1,int n){
 }
 return arr;
 }
-int ** smmr(int **arr1,int **arr2,int n){	
+int ** smmr(int **arr1, int **arr2, int n){	
 	  int i,j,k=0;	  
 	  //if n is odd then add padding to input matrices
 	  if(n!=1&(n%2)!=0){	  	
@@ -47,7 +45,7 @@ int ** smmr(int **arr1,int **arr2,int n){
 	  	n =n+1;	  	
 	  }	  
 //allocate space to hold local result matrix 
-int 	   **arr= (int **)malloc(n * sizeof(int *));
+int 	   **arr = (int **)malloc(n * sizeof(int *));
 	for (i=0; i<n; i++)
     {
 		   
@@ -174,5 +172,5 @@ printf("\n");
 free(arr);
 free(arr1);
 free(arr2);
-getchar();	
+//getchar();	
 }
