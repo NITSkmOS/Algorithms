@@ -114,66 +114,67 @@ free(b1);
 free(b2);
 free(b3);
 free(b4);
-//return result matrix
+	//return result matrix
 	return arr;	
-	}
+		}
 } 
-void main(){
-int s;
-printf("ENTER THE SIZE OF MATRICES: ");	
-//scanf("%d",&s);
+	int main(){
+	int s;
+	printf("ENTER THE SIZE OF MATRICES: ");	
+	//scanf("%d",&s);
 	s = 3;
-int i=0,j=0;
-//declare pointers for the input matrices and allocate memory of give size
-int **arr;
-int **arr2 = (int**)malloc(s * sizeof(int*));
-int **arr1 = (int**)malloc(s * sizeof(int*));
-for (i=0; i<s; i++)
+	int i=0,j=0;
+	//declare pointers for the input matrices and allocate memory of give size
+	int **arr;
+	int **arr2 = (int**)malloc(s * sizeof(int*));
+	int **arr1 = (int**)malloc(s * sizeof(int*));
+	for (i=0; i<s; i++)
     {
 		    arr1[i] = (int *)malloc(s * sizeof(int));
             arr2[i] = (int *)malloc(s * sizeof(int));
     }
-//input matrix-1
-printf("ENTER MATRIX-1\n");
-for(i = 0; i < s; i++){
+	//input matrix-1
+	printf("ENTER MATRIX-1\n");
+	for(i = 0; i < s; i++){
 	for(j = 0; j < s; j++){
 	//scanf("%d",&arr1[i][j]);
 		arr1[i][j] = i + j;
-}
-}
-printf("ENTER MATRIX-2\n");
-for(i = 0; i < s; i++){
-	for(j = 0; j < s; j++){
-	//scanf("%d",&arr2[i][j]);
+	}
+	}
+	printf("ENTER MATRIX-2\n");
+	for(i = 0; i < s; i++){
+		for(j = 0; j < s; j++){
+		//scanf("%d",&arr2[i][j]);
 		arr2[i][j] = i + j;
-}
-}
+	}
+	}
     arr = smmr(arr1,arr2,s);
-//arr = add(arr1,arr2,s);
-printf("-----MATRIX-1-------\n");
-for(i = 0;i < s; i++){
-	for(j = 0;j < s; j++){
-	printf("%d\t", arr1[i][j]);
-}
-printf("\n");
-}
-printf("-----MATRIX-2--------\n");
-for(i=0;i<s;i++){
-	for(j=0;j<s;j++){
-	printf("%d\t",arr2[i][j]);
-}
-printf("\n");
-}
-printf("----------MATRIX-1 X MATRIX-2-------\n");
-for(i=0;i<s;i++){
-	for(j=0;j<s;j++){
-	printf("%d\t",arr[i][j]);
-}
-printf("\n");
-}
-//free allocated space
-free(arr);
-free(arr1);
-free(arr2);
-//getchar();	
+	//arr = add(arr1,arr2,s);
+	printf("-----MATRIX-1-------\n");
+	for(i = 0;i < s; i++){
+		for(j = 0;j < s; j++){
+		printf("%d\t", arr1[i][j]);
+	}
+		printf("\n");
+	}
+	printf("-----MATRIX-2--------\n");
+	for(i=0;i<s;i++){
+		for(j=0;j<s;j++){
+		printf("%d\t",arr2[i][j]);
+	}
+		printf("\n");
+	}
+	printf("----------MATRIX-1 X MATRIX-2-------\n");
+	for(i=0;i<s;i++){
+		for(j=0;j<s;j++){
+		printf("%d\t",arr[i][j]);
+	}
+	printf("\n");
+	}
+	//free allocated space
+	free(arr);
+	free(arr1);
+	free(arr2);
+	//getchar();
+	return 0;
 }
