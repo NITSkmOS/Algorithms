@@ -40,8 +40,8 @@ void display(int a[], int n){
 }
 
 int main(){
-	int a[50],n.i;
-    cout<<"\nEnter size of Array: ";
+	int a[50],n,i;
+	cout<<"\nEnter size of Array: ";
     cin>>n;
     cout<<"\nEnter elements : ";
     for(i = 0; i < n; i++)
