@@ -42,12 +42,12 @@ void display(int a[], int n){
 int main(){
 	int a[50],n,i;
 	cout<<"\nEnter size of Array: ";
-    cin>>n;
-    cout<<"\nEnter elements : ";
-    for(i = 0; i < n; i++)
-    	cin>>a[i];
-    mergesort(a,0,n-1);
-    cout<<"\nSorted Array :\t";
-    display(a,n);
-    return 0;
+	cin>>n;
+	cout<<"\nEnter elements : ";
+	for(i = 0; i < n; i++)
+   		cin>>a[i];
+	mergesort(a,0,n-1);
+	cout<<"\nSorted Array :\t";
+	display(a,n);
+	return 0;
 }
