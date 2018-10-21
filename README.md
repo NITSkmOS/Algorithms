@@ -4,6 +4,7 @@
 [![NITSkmOS Algorithms](https://img.shields.io/badge/NITSkmOS-Algorithms-blue.svg)](https://github.com/NITSkmOS/Algorithms)
 [![Build Status](https://travis-ci.com/NITSkmOS/Algorithms.svg?branch=master)](https://travis-ci.com/NITSkmOS/Algorithms)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/NITSkmOS/Algorithms/blob/master/LICENSE)
+[![OpenHub](https://www.openhub.net/p/NITSkmOS-algo/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/NITSkmOS-algo?ref=Thin+badge)
 
 
 This repository contains examples of various algorithms written on different programming languages...
