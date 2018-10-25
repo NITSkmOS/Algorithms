@@ -46,14 +46,9 @@ This repository contains examples of various algorithms written on different pro
 | --------------- | ---------------------------------------------------------------------- |
 | JavaScript      | ```node [filename.js]```                                               |
 | Python          | ```python [filename.py]```                                             |
-| C               | ```gcc [filename.c]
-./a.out  # unix
-a.exe  # windows```          |
-| CPP             | ```g++ [filename.cpp]
-./a.out # unix
-a.exe # windows```          |
-| Java            | ```javac [filename.java]
-java [filename]```                         |
+| C               | ```gcc [filename.c]; ./a.out  # unix; a.exe  # windows```              |
+| CPP             | ```g++ [filename.cpp]; ./a.out # unix; a.exe # windows```              |
+| Java            | ```javac [filename.java]; java [filename]```                           |
 
 
 ## Contributing
