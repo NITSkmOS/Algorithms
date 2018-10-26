@@ -1,20 +1,34 @@
-# Function to do selection sort of given array(Arr)
-def selection_sort(Arr):
-    for i in range(len(Arr)):
-        low = i;
-        for j in range(i+1, len(Arr)):
-            if Arr[j] < Arr[low]:
+def selection_sort(arr): # Function that performs the SelectionSort
+    """
+    - The SelectionSort function takes in an array as argument
+    - Sorts the elements in array by making use of inner and outer loops
+    - Returns a sorted array as output
+    :papram arr: An array for sorting
+    """
+    n = len(arr) # Length of arr is stored for further use
+
+    for i in range(n): # Traverse through all array elements
+        low = i # Set the current element to low
+        for j in range(i+1, n): 
+            """
+            Traverse the array from i+1 to n-i as inner loop,
+            i.e. i is the counter for outer loop and j for 
+            the inner loop
+            """
+            if arr[j] < arr[low]: # Set low to current j, if it's value is smaller
                 low = j
-        Arr[i], Arr[low] = Arr[low], Arr[i]
+        arr[i], arr[low] = arr[low], arr[i] # Swap element at i with element low
 
-# Given array
-Arr = [4, 3, 42, 82, 5, 2, 33]
 
-print("The unsorted array is:")
-print(Arr)
+def main():
+    arr = [4, 3, 42, 82, 5, 2, 33] # Declare a sample array
+    print('Unsorted elements before using SelectionSort: {}'.format(
+              ' '.join(map(str, arr)))) # Print current state of array
 
-# Calling selection sort algorithm
-selection_sort(Arr)
+    selection_sort(arr)
+    print('Sorted element using SelectionSort: {}'.format(
+              ' '.join(map(str, arr)))) # Print the state of array after selection sorting
 
-print("The sorted array is:")
-print(Arr)
+
+if __name__ == '__main__':
+    main()
