@@ -2,21 +2,21 @@ import java.util.Random;
 import java.util.Scanner;
 
 //Sorts an array, of given size, of randomly generated numbers using MergeSort Algorithm
-public class MergeSort {
+public class MergeSort{
 
     //Recursively call mergesort, reducing the array size in every call
     void mergesort(int []arr,int l,int h){
-        int mid = (l+h)/2;		//Split array into two virtual parts
-        if(h>l){			//If array contains more than two elements
-            mergesort(arr,l,mid);	//Sort first part recursively
-            mergesort(arr,mid+1,h);	//Sort second part recursively
-            merge(arr,l,mid,h);		//Merge sorted arrays into single sorted array
+        int mid = (l+h)/2;    //Split array into two virtual parts
+        if(h>l){              //If array contains more than two elements
+            mergesort(arr,l,mid);    //Sort first part recursively
+            mergesort(arr,mid+1,h);  //Sort second part recursively
+            merge(arr,l,mid,h);      //Merge sorted arrays into single sorted array
         }
     }
 
     //Merge two sorted arrays into a single sorted array
     private void merge(int []arr,int l,int m,int h){
-        int []c = new int[l+h];		//create temporary array. This will hold the sorted array
+        int []c = new int[l+h];      //create temporary array. This will hold the sorted array
 
     //Copies of l,m,h. These will be modified, while originals remain unchanged.
         int i=l;
