@@ -9,7 +9,7 @@ def selection_sort(arr): # Function that performs the SelectionSort
 
     for i in range(n): # Traverse through all array elements
         low = i # Set the current element to low
-        for j in range(i+1, n): 
+        for j in range(i+1, n):
             """
             Traverse the array from i+1 to n-i as inner loop,
             i.e. i is the counter for outer loop and j for 
