@@ -13,3 +13,7 @@ script:
   - sh .misc/run_test.sh
   - coala --ci
   - eclint check "**/*.{java,c,cpp}"
+
+notifications:
+  webhooks: https://www.travisbuddy.com/
+  on_success: never
