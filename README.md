@@ -6,7 +6,6 @@
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/NITSkmOS/Algorithms/blob/master/LICENSE)
 [![OpenHub](https://www.openhub.net/p/NITSkmOS-algo/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/NITSkmOS-algo?ref=Thin+badge)
 
-
 This repository contains examples of various algorithms written on different programming languages...
 
 ## Implemented Algorithms
@@ -24,9 +23,8 @@ This repository contains examples of various algorithms written on different pro
 | [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           | [:octocat:](shell_sort/C)             |                                       |                                       | [:octocat:](shell_sort/Python)        |
 | [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |                                       |                                       | [:octocat:](heap_sort/python)        |
 | [Maximum Subarray Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem)              |                                       |                                       |                                       | [:octocat:](/maximum_subarray/Python)|
-| [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem)							  |	                                      |                                       |                                       | [:octocat:](knapsack_problem/Python)|
-| [Selecton Sort](https://en.wikipedia.org/wiki/Selection_sort)							          | [:octocat:](selection_sort/C)	                                      |                                       |                                       | [:octocat:](selection_sort/Python) |
-
+| [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem)  |                                      |                                       |                                       | [:octocat:](knapsack_problem/Python)|
+| [Selecton Sort](https://en.wikipedia.org/wiki/Selection_sort)          | [:octocat:](selection_sort/C)                                    |                                       |                                       | [:octocat:](selection_sort/Python)           |
 
 ## Implemented Data Structures
 
@@ -39,17 +37,15 @@ This repository contains examples of various algorithms written on different pro
 | [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)                          |                                       | [:octocat:](binary_search_tree/Cpp)                                       |                                       |                                       |
 | [Fenwick Tree](https://en.wikipedia.org/wiki/Fenwick_tree)                                      |                                       |                                       | [:octocat:](fenwick_tree/java)        | [:octocat:](fenwick_tree/Python)      |
 
-
 ## Sample Run
 
-| Language        | Steps                                                                  |
-| --------------- | ---------------------------------------------------------------------- |
-| JavaScript      | ```node [filename.js]```                                               |
-| Python          | ```python [filename.py]```                                             |
-| C               | ```gcc [filename.c]; ./a.out  # in unix; a.exe  # in windows```              |
-| CPP             | ```g++ [filename.cpp]; ./a.out # in unix; a.exe # in windows```              |
-| Java            | ```javac [filename.java]; java [filename]```                           |
-
+| Language        | Steps                                                                    |
+| --------------- | ------------------------------------------------------------------------ |
+| JavaScript      | ```node [filename.js]```                                                 |
+| Python          | ```python [filename.py]```                                               |
+| C               | ```gcc [filename.c]```<br>```./a.out  # unix```<br>```a.exe  # windows```|
+| CPP             | ```g++ [filename.cpp]```<br>```./a.out # unix```<br>```a.exe # windows```|
+| Java            | ```javac [filename.java]```<br>```java [filename]```                     |
 
 ## Contributing
 
