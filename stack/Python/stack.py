@@ -24,8 +24,7 @@ class Stack:
         """
 
         if len(self.stack) <= 0:
-            # Raise an error if stack is empty.
-            return "No element in the Stack"
+            raise IndexError("No element in the Stack")
 
         else:
             return self.stack.pop()
