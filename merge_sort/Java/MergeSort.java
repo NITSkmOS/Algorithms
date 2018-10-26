@@ -2,7 +2,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 //Sorts an array, of given size, of randomly generated numbers using MergeSort Algorithm
-
 public class MergeSort {
 
     //Recursively call mergesort, reducing the array size in every call
@@ -17,16 +16,16 @@ public class MergeSort {
 
     //Merge two sorted arrays into a single sorted array
     private void merge(int []arr,int l,int m,int h){
-        int []c = new int[l+h];		//create temporary array. This will hold the sorted array		
+        int []c = new int[l+h];		//create temporary array. This will hold the sorted array
 
-	//Copies of l,m,h. These will be modified, while originals remain unchanged.
-        int i=l;			
+    //Copies of l,m,h. These will be modified, while originals remain unchanged.
+        int i=l;
         int j=m+1;
         int k=l;
 
-	//Until we reach the end of either sub-array
+    //Until we reach the end of either sub-array
         while(i<=m && j<=h){
-	    //Fill the smaller element in the temporary array. Increment the counter of the array with the smaller value.
+        //Fill the smaller element in the temporary array. Increment the counter of the array with the smaller value.
             if(arr[i]<arr[j])
                 c[k]=arr[i++];
             else
@@ -34,13 +33,13 @@ public class MergeSort {
             k++;
         }
 
-	//Fill the remaining part of the longer array (if existing) into the final array
+    //Fill the remaining part of the longer array (if existing) into the final array
         while(i<=m)
             c[k++]=arr[i++];
         while(j<=h)
             c[k++]=arr[j++];
 
-	//Copy temporary array to the original array
+    //Copy temporary array to the original array
         for(int x=l;x<=h;x++)
             arr[x]=c[x];
     }
