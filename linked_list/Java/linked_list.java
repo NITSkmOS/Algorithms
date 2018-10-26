@@ -1,6 +1,6 @@
-public class LinkedList<T> {
+public class linked_list<T> {
     public static void main(String[] args) {
-        LinkedList<String> list = new LinkedList<String>("head");
+        linked_list<String> list = new linked_list<String>("head");
         list.add("second");
         list.add("third");
         list.add("last");
@@ -11,11 +11,11 @@ public class LinkedList<T> {
 
     private Node<T> head;
 
-    public LinkedList(T head) {
+    public linked_list(T head) {
         this.head = new Node<T>(head);
     }
 
-    public LinkedList() {
+    public linked_list() {
     }
 
     /**
@@ -105,4 +105,3 @@ public class LinkedList<T> {
         }
     }
 }
-
