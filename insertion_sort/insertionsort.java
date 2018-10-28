@@ -25,7 +25,7 @@
     }  
     public static void main(String args[]) 
     {         
-        int arr[] = {12, 11, 13, 5, 6}; 
+        int arr[] = {10,-1, 0, 5 , 3, 12, 21}; 
   
         InsertionSort ob = new InsertionSort();         
         ob.sort(arr); 
