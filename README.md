@@ -38,7 +38,7 @@ This repository contains examples of various algorithms written on different pro
 | [AVL Tree](https://en.wikipedia.org/wiki/AVL_tree)                                              | [:octocat:](avl_tree/C)               | [:octocat:](avl_tree/Cpp)      | [:octocat:](avl_tree/Java)            | [:octocat:](avl_tree/Python)          |
 | [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)                          |                                       | [:octocat:](binary_search_tree/Cpp)                                       |                                       |                                       |
 | [Fenwick Tree](https://en.wikipedia.org/wiki/Fenwick_tree)                                      |                                       |                                       | [:octocat:](fenwick_tree/java)        | [:octocat:](fenwick_tree/Python)      |
-
+| [Doubly Linked List](https://en.wikipedia.org/wiki/Doubly_linked_list)                          | [:octocat:](doubly_linked_list/c)     |                                       |                                       |                                       |
 
 ## Sample Run
 
