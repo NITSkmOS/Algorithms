@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Node struct for the Linked List
 struct Node {
 	int data;
 	struct Node* next;
 	struct Node* prev;
 };
 
+//An empty list is created.
 void create_list(struct Node **head_ref) {
 	*head_ref = NULL;
 	printf("List created successfully.");
 	return;
 }
 
+/* Given reference to the head of the list, this function
+inserts a node at the beginning of the List*/
 void insert(struct Node **head_ref, int new_data) {
+	//Allocate memory for the node
 	struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
 	new_node->data = new_data;
 	new_node->next = (*head_ref);
@@ -23,6 +28,8 @@ void insert(struct Node **head_ref, int new_data) {
 	(*head_ref) = new_node;
 }
 
+/*Given reference to the head of the list, insert_before()
+adds a node before a given node*/
 void insert_before(struct Node *next_node, int new_data) {
 	if (next_node == NULL) {
 		printf("The given Next node is NULL");
@@ -37,6 +44,7 @@ void insert_before(struct Node *next_node, int new_data) {
 		new_node->prev->next = new_node;
 }
 
+// Print the list in both directions
 void print_list(struct Node *node) {
 	struct Node* last;
 	printf("\nTraversal in forward direction \n");
