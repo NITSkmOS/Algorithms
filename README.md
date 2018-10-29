@@ -1,9 +1,11 @@
 # Welcome to the NITSkmOS/Algorithms
 
+[![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red.svg)](https://github.com/NITSkmOS/Algorithms)
 [![Gitter](https://badges.gitter.im/NITSkmOS/algo.svg)](https://gitter.im/NITSkmOS/algo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![NITSkmOS Algorithms](https://img.shields.io/badge/NITSkmOS-Algorithms-blue.svg)](https://github.com/NITSkmOS/Algorithms)
 [![Build Status](https://travis-ci.com/NITSkmOS/Algorithms.svg?branch=master)](https://travis-ci.com/NITSkmOS/Algorithms)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/NITSkmOS/Algorithms/blob/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg)](https://github.com/NITSkmOS/Algorithms/graphs/contributors)
 [![OpenHub](https://www.openhub.net/p/NITSkmOS-algo/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/NITSkmOS-algo?ref=Thin+badge)
 
 
