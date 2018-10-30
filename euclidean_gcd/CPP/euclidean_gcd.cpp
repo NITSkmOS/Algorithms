@@ -1,11 +1,8 @@
 #include <iostream>
-
 int gcd_rec(int a, int b)
 {
 	return b == 0 ? a : gcd_rec(b, a % b);
 }
-
-
 int gcd_loop(int a , int b) {
 	while (b != 0)
 	{
@@ -15,8 +12,6 @@ int gcd_loop(int a , int b) {
 	}
 	return a;
 }
-
-
 using namespace std;
 int main()
 {
