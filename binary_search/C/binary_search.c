@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int binarySearch(int arr[], int start, int end, int item)
-{
+int binarySearch(int arr[], int start, int end, int item) {
 	int mid = start + (end-start) / 2;
 	while (start <= mid) {
 		if (arr[mid] == item) {
@@ -16,8 +15,7 @@ int binarySearch(int arr[], int start, int end, int item)
 	return -1;
 }
 
-int main()
-{
+int main() {
 	int arr[] = {1, 3, 4, 4, 10, 13, 25, 26, 27, 60};
 	int n = 10;
 	int x = 13;
