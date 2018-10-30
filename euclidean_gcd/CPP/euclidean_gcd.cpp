@@ -7,7 +7,7 @@ int gcd_rec(int a, int b)
 
 
 int gcd_loop(int a , int b) {
-	while (b != 0) 
+	while (b != 0)
 	{
 		int temp = b;
 		b = a % b;
