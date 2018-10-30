@@ -247,16 +247,16 @@ are awesome!
 Now after you have created the Pull Request, there are two
 possibilities:
 
--   your PR will get accepted, and your commit will get merged into the
+- your PR will get accepted, and your commit will get merged into the
     master branch - sadly, this rarely happens on the first Pull Request.
--   your PR will be rejected. There are 2 cases when a PR is rejected:
+- your PR will be rejected. There are 2 cases when a PR is rejected:
 
-    > -   Test fails
-    > -   Reviewer wants something changed (This also causes bot to
-    >     fail)
+    > - Test fails
+    > - Reviewer wants something changed (This also causes bot to
+    >   fail)
 
 It's highly unlikely that your PR will be accepted on the first attempt
-- but don't worry that's just how it works. It helps us maintain the
+but don't worry that's just how it works. It helps us maintain the
 repository **clean** and **stable**.
 
 Now if you need to modify your code, you can simply edit it again, add

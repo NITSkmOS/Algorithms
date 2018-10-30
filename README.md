@@ -8,7 +8,6 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg)](https://github.com/NITSkmOS/Algorithms/graphs/contributors)
 [![OpenHub](https://www.openhub.net/p/NITSkmOS-algo/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/NITSkmOS-algo?ref=Thin+badge)
 
-
 This repository contains examples of various algorithms written on different programming languages...
 
 ## Implemented Algorithms
@@ -26,9 +25,8 @@ This repository contains examples of various algorithms written on different pro
 | [Shell Sort](https://en.wikipedia.org/wiki/Shellsort)                                           | [:octocat:](shell_sort/C)             |                                       |                                       | [:octocat:](shell_sort/Python)        |
 | [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)                                             |                                       |                                       |                                       | [:octocat:](heap_sort/python)        |
 | [Maximum Subarray Problem](https://en.wikipedia.org/wiki/Maximum_subarray_problem)              |                                       |                                       |                                       | [:octocat:](/maximum_subarray/Python)|
-| [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem)							  |	                                      |                                       |                                       | [:octocat:](knapsack_problem/Python)|
-| [Selecton Sort](https://en.wikipedia.org/wiki/Selection_sort)							          | [:octocat:](selection_sort/C)	                                      |                                       |                                       |                                        |
-
+| [Knapsack Problem](https://en.wikipedia.org/wiki/Knapsack_problem)                              |                                          |                                       |                                       | [:octocat:](knapsack_problem/Python)|
+| [Selecton Sort](https://en.wikipedia.org/wiki/Selection_sort)                                      | [:octocat:](selection_sort/C)                                          |                                       |                                       |                                        |
 
 ## Implemented Data Structures
 
@@ -51,7 +49,6 @@ This repository contains examples of various algorithms written on different pro
 | C               | <pre>gcc [filename.c]<br>./a.out  # unix<br>a.exe  # windows</pre>     |
 | CPP             | <pre>g++ [filename.cpp]<br>./a.out # unix<br>a.exe # windows</pre>     |
 | Java            | <pre>javac [filename.java]<br>java [filename]</pre>                    |
-
 
 ## Contributing
 
