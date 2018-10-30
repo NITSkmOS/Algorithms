@@ -1,4 +1,5 @@
 # Welcome to the NITSkmOS/Algorithms
+Refer the following link for more information
 
 [![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red.svg)](https://github.com/NITSkmOS/Algorithms)
 [![Gitter](https://badges.gitter.im/NITSkmOS/algo.svg)](https://gitter.im/NITSkmOS/algo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -9,7 +10,7 @@
 [![OpenHub](https://www.openhub.net/p/NITSkmOS-algo/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/NITSkmOS-algo?ref=Thin+badge)
 
 
-This repository contains examples of various algorithms written on different programming languages...
+This repository contains examples of various algorithms written on different programming languages such as Java,Python,CPP,C etc.
 
 ## Implemented Algorithms
 
