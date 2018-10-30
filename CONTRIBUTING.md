@@ -140,14 +140,14 @@ void quicksort(int ar_size, int *ar) {
 }
 
 int main() {
-	int ar_size = 4, i;
-	int a[4] = {2, 3, 0, 4};
-	quicksort(ar_size, a);
+    int ar_size = 4, i;
+    int a[4] = {2, 3, 0, 4};
+    quicksort(ar_size, a);
 
-	for (i=0; i<ar_size; i++){
-		printf("%d\n", a[i]);
-	}
-	return 0;
+    for (i=0; i<ar_size; i++){
+        printf("%d\n", a[i]);
+    }
+    return 0;
 }
 ```
 
