@@ -22,6 +22,6 @@ int main()
 	int n = 10;
 	int x = 13;
 	int result = binarySearch(arr, 0, n - 1, x);
-    printf("Index of %d in array is: %d\n", x, result);
+	printf("Index of %d in array is: %d\n", x, result);
 	return 0;
 }
