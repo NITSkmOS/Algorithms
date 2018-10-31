@@ -10,7 +10,7 @@ public class heap_sort {
             heap.removeMin();
         }
     }
-    
+
     public static void main(String[] args) {
         int[] arr = new int[] {2, 3, 0, 4, -1, 34, 10, 12, 6, -10};
         run_heap_sort(arr);
@@ -18,7 +18,7 @@ public class heap_sort {
             System.out.println(element);
         }
     }
-    
+
     private static class HeapMin {
         private int actualSize, maxSize;
         private int[] nodes;
@@ -31,10 +31,6 @@ public class heap_sort {
             nodes = new int[size+1];
             maxSize = size;
             actualSize = 0;
-        }
-
-        public int getSize(){
-            return actualSize;
         }
 
         /**
@@ -85,7 +81,7 @@ public class heap_sort {
                 return 0;
             }
         }
-        
+
         /**
          * Rises a heap element
          * @param i Element index
@@ -98,7 +94,6 @@ public class heap_sort {
                     int aux = nodes[parent(i)];
                     nodes[parent(i)] = nodes[i];
                     nodes[i] = aux;
-                    
                     rise(parent(i));
                 }
             }
@@ -127,15 +122,13 @@ public class heap_sort {
                     }
                 }else if (leftChild(i) != 0){
                     child = leftChild(i);
-                }    
-                
+                }
                 //If there's a child node, try to switch node positions
                 if(child > 0){
                     if(nodes[child] < nodes[i]){
                         int aux = nodes[i];
                         nodes[i] = nodes[child];
                         nodes[child] = aux;
-                        
                         descend(child);
                     }
                 }
@@ -164,7 +157,5 @@ public class heap_sort {
                 descend(1);
             }
         }
-        
     }
-
 }
