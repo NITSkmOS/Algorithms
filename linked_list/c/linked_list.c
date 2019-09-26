@@ -4,7 +4,7 @@
 typedef struct Node {
 	int data;
 	struct Node* next;
-} Node;
+};
 
 void createList(Node **START) {
 	*START = NULL;
@@ -12,20 +12,14 @@ void createList(Node **START) {
 	return;
 }
 
-void insert(Node **START, int data) {
-	Node *new_node = (Node *)malloc(sizeof(Node));	// Ignore CPPLintBear
-	new_node->data = data;
-	if (*START == NULL) {
-		new_node->next = NULL;
-		*START = new_node;
-	} else {
-		new_node->next = *START;
-		*START = new_node;
-	}
+void insert(struct Node **START, int new_data) {
+	struct Node *new_node = (struct Node*)malloc(sizeof(struct Node));	// Ignore CPPLintBear
+	new_node->data = new_data;
+	new_node->next= (*START);
+	*START = new_node;
 }
 
-void printList(Node **START) {
-	Node *temp = *START;
+void printList(struct Node *temp) {
 	while (temp != NULL) {
 		printf("%d ", temp->data);
 		temp = temp->next;
@@ -34,12 +28,11 @@ void printList(Node **START) {
 }
 
 int main() {
-	Node* START;
-	createList(&START);
+	struct Node* START=NULL;
 	insert(&START, 12);
 	insert(&START, 10);
 	insert(&START, 9);
 	insert(&START, 56);
 	insert(&START, 17);
-	printList(&START);
+	printList(START);
 }
