@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-void insertion_sort(int arr_size, int arr[]) {
+void insertion_sort(int arr_size, int *arr) {
 	// Fuction to do insertion sort.
 	int i;
 	int pivot;
@@ -21,10 +21,9 @@ void insertion_sort(int arr_size, int arr[]) {
 }
 
 int main() {
-	int i;
 	int arr[6] = {6, 5, 4, 3, 2, 1};
-	int arr_size= sizeof(arr)/ sizeof(arr[0]);
-	insertion_sort(arr, arr_size );
+	insertion_sort(arr_size, arr);
+
 	for (i=0; i < arr_size; i++) {
 		printf("%d\n", arr[i]);
 	}
