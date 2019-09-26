@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 
-void insertion_sort(int arr[], int n) {
+void insertion_sort(int arr_size, int arr[]) {
 	// Fuction to do insertion sort.
 	int i;
 	int pivot;
 	int j;
-	for (i = 1; i < n; i++) {
+	for (i = 1; i < arr_size; i++) {
 		pivot = arr[i];
 		j = i-1;
 		/* Move elements of arr[0..i-1], that are
@@ -20,19 +20,13 @@ void insertion_sort(int arr[], int n) {
 	}
 }
 
-void printArray(int arr[], int n) 
-{ 
-    int i; 
-    for (i = 0; i < n; i++) 
-        printf("%d ", arr[i]); 
-    printf("\n"); 
-} 
-
 int main() {
+	int i;
 	int arr[6] = {6, 5, 4, 3, 2, 1};
-	int n= sizeof(arr)/ sizeof(arr[0]);
-	insertion_sort(arr, n);
-	printArray(arr, n);
-
+	int arr_size= sizeof(arr)/ sizeof(arr[0]);
+	insertion_sort(arr, arr_size );
+	for (i=0; i < arr_size; i++) {
+		printf("%d\n", arr[i]);
+	}
 	return 0;
 }
