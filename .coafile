@@ -3,6 +3,7 @@
 
 [all]
 max_line_length = 80
+ignore = .env/**
 
 [all.cpp]
 files = **/*.c, **/*.cpp
