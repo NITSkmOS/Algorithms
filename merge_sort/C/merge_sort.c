@@ -6,7 +6,7 @@ void merge(int[], int, int, int);
 
 int main() {
 	int arr_size = 6;
-	int arr[6] = {10, 9, 8, 7, 6, 5};
+	int arr[] = {10, 9, 8, 7, 6, 5};
 	mergesort(arr, 0, arr_size);
 
 	// Print sorted array
