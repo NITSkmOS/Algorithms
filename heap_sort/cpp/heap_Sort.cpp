@@ -32,18 +32,11 @@ void heapSort(int arr[], int m)
 
 int main()
 {
-   int m ;
-   cout<<"Enter totoal number of elements"<<endl;
-   cin>>m;
-   int ar[m];
-   cout<<"Enter the array"<<endl;
-   for(int i=0;i<m;i++)
-	{
-	   cin>>ar[i];
-	}
+   int ar[] = {5,19,4,14,8,9};
+   int m = sizeof(ar)/sizeof(ar[0]);
    heapSort(ar, m);
    cout << "Sorted array is"<<endl;
-   for (int i=0; i<m; ++i){
+   for (int i=0; i<m;++i){
    cout << ar[i] << " ";
    cout << "\n";
    }
