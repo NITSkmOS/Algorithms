@@ -1,5 +1,9 @@
+branches:
+  - master
+git:
+  depth: 1
 sudo: false
-dist: xenial
+dist: bionic
 language: python
 python: 3.7
 
