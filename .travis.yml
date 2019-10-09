@@ -1,19 +1,33 @@
-dist: trusty
 sudo: required
-language: node_js
-node_js:
-  "7"
+before_install:
+  - sudo apt-get install libao-dev
+  - sudo apt-get install libcurl4-openssl-dev
+  - chmod +x installMPG123.sh
+  - ./installMPG123.sh
+  
+# Enable C++ support
+language: cpp
 
+# Compiler selection
+compiler:
+  - gcc
+  
 install:
-  - sh .misc/apt_install.sh
-  - sh .misc/npm_install.sh
-  - sh .misc/pip3_install.sh
+  - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
+  - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
+  
+  - |
+    if [[ "${TRAVIS_OS_NAME}" == "linux" ]]; then
+      CMAKE_URL="http://www.cmake.org/files/v3.3/cmake-3.3.2-Linux-x86_64.tar.gz"
+      mkdir cmake && travis_retry wget --no-check-certificate --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C cmake
+      export PATH=${DEPS_DIR}/cmake/bin:${PATH}
+    fi
+  
+  # Go to the Root directory  
+  - cd ..
 
+# Build steps
 script:
-  - sh .misc/run_test.sh
-  - coala --ci
-  - eclint check "**/*.{java,c,cpp}"
-
-notifications:
-  webhooks: https://www.travisbuddy.com/
-  on_success: never
+  - mkdir build
+  - cd build
+  - ${DEPS_DIR}/cmake/bin/cmake .. && make
