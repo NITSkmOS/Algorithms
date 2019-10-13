@@ -12,19 +12,19 @@ class heap
         bool isFull();
         bool isEmpty();
         void insert(int);
-        int getSize();
+        int getSize(); // Get the current size of heap
         void heapify(int);
-        void build_max_heap();
-        void display_heap();
-        int delete_first_element();
-        int get_left_child(int);
-        int get_right_child(int);
-        int get_parent(int);
-        int get_max();
-        void replace(int, int);
-        void siftUp(int);
+        void build_max_heap(); // Build a max heap
+        void display_heap(); // Print the elements in the heap
+        int delete_first_element(); // Remove the first element and return it
+        int get_left_child(int); // Returns the left child of a parent
+        int get_right_child(int); // Returns the right child of a parent
+        int get_parent(int); // Returns the value of parent index
+        int get_max(); // Returns the maximum element in the heap
+        void replace(int, int); // Replaces the key value at an index
+        void siftUp(int); // To re-convert the changed heap into max heap
 };
-
+// Here we assume that the heap can have a maximum size of 50
 heap::heap()
 {
     count = 0;
@@ -104,6 +104,7 @@ void heap::display_heap()
     cout<<"\n";
 }
 
+// This also returns the largest element in the heap
 int heap::delete_first_element()
 {
     if(isEmpty())
@@ -187,6 +188,7 @@ void heap::siftUp(int index)
     }
 }
 
+// Driver method
 int main()
 {
     heap hp;
