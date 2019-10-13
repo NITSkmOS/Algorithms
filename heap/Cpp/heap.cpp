@@ -92,8 +92,7 @@ void heap::display_heap() {
 int heap::delete_first_element() {
 	if(isEmpty()) {
 		return -1;
-	}
-	else {
+	} else {
 		int temp = arr[0];
 		arr[0] = arr[count-1];
 		arr[count-1] = temp;
@@ -106,8 +105,7 @@ int heap::delete_first_element() {
 int heap::get_left_child(int i) {
 	if(2*i+1 < count) {
 		return arr[2*i+1];
-	}
-	else {
+	} else {
 		return -1;
 	}
 }
@@ -115,8 +113,7 @@ int heap::get_left_child(int i) {
 int heap::get_right_child(int i) {
 	if(2*i+2 < count) {
 		return arr[2*i+2];
-	}
-	else {
+	} else {
 		return -1;
 	}
 }
@@ -124,8 +121,7 @@ int heap::get_right_child(int i) {
 int heap::get_parent(int i) {
 	if(i < count) {
 		return arr[i];
-	}
-	else {
+	} else {
 		return -1;
 	}
 }
@@ -133,8 +129,7 @@ int heap::get_parent(int i) {
 int heap::get_max() {
 	if(isEmpty()) {
 		return -1;
-	}
-	else {
+	} else {
 		return arr[0];
 	}
 }
@@ -172,9 +167,9 @@ int main() {
 	cout << hp.delete_first_element() << "\n";
 	hp.display_heap();
 	cout << hp.get_max() << "\n";
-	cout << "Parent"<<hp.get_parent(2) << "\n";
-	cout << "Left"<<hp.get_left_child(2) << "\n";
-	cout << "Right"<<hp.get_right_child(2) << "\n";
+	cout << "Parent" << hp.get_parent(2) << "\n";
+	cout << "Left" << hp.get_left_child(2) << "\n";
+	cout << "Right" << hp.get_right_child(2) << "\n";
 	hp.replace(20, 9);
 	hp.display_heap();
 }
