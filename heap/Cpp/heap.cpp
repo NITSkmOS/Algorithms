@@ -205,7 +205,6 @@ int main()
     hp.display_heap();
     cout<<hp.delete_first_element()<<"\n";
     hp.display_heap();
-    
     cout<<hp.get_max()<<"\n";
     cout<<"Parent"<<hp.get_parent(2)<<"\n";
     cout<<"Left"<<hp.get_left_child(2)<<"\n";
