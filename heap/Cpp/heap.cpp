@@ -143,7 +143,7 @@ void heap::replace(int value, int index) {
 
 void heap::siftUp(int index) {
 	while(index != 0) {
-		index = (index-1)/2;    // To get the parent of a child
+		index = (index-1)/2;	// To get the parent of a child
 		heapify(index);
 	}
 }
