@@ -44,7 +44,7 @@ int GCD_extend(int a,int b,int & x,int & y)
 
 int main()
 {
-    int a = 20, b = 30, x, y;
+    int a = 30, b = 40, x, y;
     cout<<"Division: GCD(a,b) = "<<GCD(a,b)<<endl;
     cout<<"Recursive: GCD(a,b) = "<<GCD_rec(a,b)<<endl;
     cout<<"Extended: GCD(a,b) = "<<GCD_extend(a,b,x,y)<<endl;
