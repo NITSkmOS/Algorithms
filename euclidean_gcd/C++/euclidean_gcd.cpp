@@ -2,7 +2,6 @@
 using namespace std;
 
 //Calculates GCD of two numbers a & b using the division-based Euclidean Algorithm
- 
 int gcd_div(int a , int b) {
 	while (b != 0) {
 		int temp = b;
@@ -14,7 +13,6 @@ int gcd_div(int a , int b) {
 
 
 //Calculates GCD of two numbers a & b using the recursive-based Euclidean Algorithm
- 
 int gcd_rec(int a, int b) {
 	if (a == 0)
 		return b;
@@ -23,7 +21,6 @@ int gcd_rec(int a, int b) {
 
 
 //Calculates GCD of two numbers a & b using the Recursive-based Extended Euclidean Algorithm
-
 int gcd_extended(int a, int b, int *x, int *y) {
 	if (a == 0) {
 		*x = 0;
@@ -46,5 +43,4 @@ int main() {
 
 	int gcd_ext = gcd_extended(a, b, &x, &y);
 	cout<<"Extended: GCD(a, b) = "<<gcd_ext;
-    return 0;
 }
