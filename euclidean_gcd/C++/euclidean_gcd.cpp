@@ -1,52 +1,50 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-// Calculates the GCD of two numbers a & b using the division-based Euclidean Algorithm
 
-int GCD(int a,int b)
-{
-    if(b!=0)
-    {
-        int temp = b;
-        b = a%b;
-        a = temp;
-    }
-    return a;
+//Calculates GCD of two numbers a & b using the division-based Euclidean Algorithm
+ 
+int gcd_div(int a , int b) {
+	while (b != 0) {
+		int temp = b;
+		b = a % b;
+		a = temp;
+	}
+	return a;
 }
 
-// Calculates the GCD of two numbers a & b using the recursive-based Euclidean Algorithm
 
-int GCD_rec(int a,int b)
-{
-    if(a==0)
-    {
-        return b;
-    }
-    return GCD_rec(b%a,a);
+//Calculates GCD of two numbers a & b using the recursive-based Euclidean Algorithm
+ 
+int gcd_rec(int a, int b) {
+	if (a == 0)
+		return b;
+	return gcd_rec(b % a, a);
 }
 
-// Calculates GCD of two numbers a & b using the Recursive-based Extended Euclidean Algorithm
 
-int GCD_extend(int a,int b,int & x,int & y)
-{
-     if (a == 0) {
-        x = 0;
-        y = 1;
-        return b;
-    }
-    int x1, y1;
-    int d = GCD_extend(b % a, a, x1, y1);
-    x = y1 - (b / a) * x1;
-    y = x1;
-    return d;
+//Calculates GCD of two numbers a & b using the Recursive-based Extended Euclidean Algorithm
+
+int gcd_extended(int a, int b, int *x, int *y) {
+	if (a == 0) {
+		*x = 0;
+		*y = 1;
+		return b;
+	}
+	int x1, y1;
+	int result = gcd_extended(b % a, a, &x1, &y1);
+	*x = y1 - (b / a) * x1;
+	*y = x1;
+	return result;
 }
 
-// Main method
+// Main Method
+int main() {
+	int a = 20, b = 30, x, y;
+	cout<<"Division: GCD(a, b) = "<<gcd_div(a, b));
 
-int main()
-{
-    int a = 30, b = 40, x, y;
-    cout<<"Division: GCD(a,b) = "<<GCD(a,b)<<endl;
-    cout<<"Recursive: GCD(a,b) = "<<GCD_rec(a,b)<<endl;
-    cout<<"Extended: GCD(a,b) = "<<GCD_extend(a,b,x,y)<<endl;
+	cout<<"Recursive: GCD(a, b) = "<<gcd_rec(a, b));
+
+	int gcd_ext = gcd_extended(a, b, &x, &y);
+	cout<<"Extended: GCD(a, b) = "<<gcd_ext;
     return 0;
 }
