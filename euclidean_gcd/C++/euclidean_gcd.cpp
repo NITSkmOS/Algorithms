@@ -40,10 +40,10 @@ int gcd_extended(int a, int b, int *x, int *y) {
 // Main Method
 int main() {
 	int a = 20, b = 30, x, y;
-	cout<<"Division: GCD(a, b) = "<<gcd_div(a, b)<<endl;
+	cout << "Division: GCD(a, b) = " << gcd_div(a, b) << endl;
 
-	cout<<"Recursive: GCD(a, b) = "<<gcd_rec(a, b)<<endl;
+	cout << "Recursive: GCD(a, b) = " << gcd_rec(a, b) << endl;
 
 	int gcd_ext = gcd_extended(a, b, &x, &y);
-	cout<<"Extended: GCD(a, b) = "<<gcd_ext<<endl;
+	cout << "Extended: GCD(a, b) = " << gcd_ext << endl;
 }
