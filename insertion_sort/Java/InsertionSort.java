@@ -1,3 +1,4 @@
+import java.util.Scanner;
 // Java program for implementation of Insertion Sort
 class InsertionSort {
     /*Function to sort array using insertion sort*/
