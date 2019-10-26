@@ -1,3 +1,4 @@
+import java.util.Scanner;
 // Java program for implementation of QuickSort
 class QuickSort
 {
@@ -65,8 +66,12 @@ class QuickSort
     // Driver program
     public static void main(String args[])
     {
-        int arr[] = {10, 7, 8, 9, 1, 5};
-        int n = arr.length;
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter size of array:");
+        int n=scanner.nextInt();
+        int []arr=new int[n];
+        for(int i=0;i<n;i++)
+            arr[i]=scanner.nextInt();
 
         QuickSort ob = new QuickSort();
         ob.sort(arr, 0, n-1);
@@ -75,4 +80,3 @@ class QuickSort
         printArray(arr);
     }
 }
-/*This code is contributed by Rajat Mishra */
