@@ -29,6 +29,17 @@ bool knuthMorrisPrattAlgorithm(string str, string substr) {
 	
 }
 
+int main(){
+	string str1 = "aefoaefcdaefcdaedaef";
+	string str2 = "aefcdaed";
+	bool ans = knuthMorrisPrattAlgorithm(str1, str2);
+	if(ans)
+	    cout<< "YES" << endl;
+	else 
+	    cout<< "NO" << endl;
+	return 0;
+}
+
 vector<int> buildpattern(string substr){
 	vector<int> pattern(substr.size()-1, -1);
 	int i=1, j=0;
