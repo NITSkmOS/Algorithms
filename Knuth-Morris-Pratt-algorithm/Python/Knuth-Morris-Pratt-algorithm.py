@@ -51,3 +51,13 @@ def doesMatch(string, substring, pattern):
     else:
         i += 1
  return False
+
+def main():
+ str1 = "aefoaefcdaefcdaed"
+ str2 = "aefcdaed"
+ ans = knuthMorrisPrattAlgorithm(str1, str2)
+ print(ans)
+
+
+if __name__ == '__main__':
+    main()
