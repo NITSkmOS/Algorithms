@@ -22,8 +22,8 @@ O(m) space complexity
 using namespace std;
 vector<int> buildpattern(string substr);
 bool doesmatch(string &str, string &substr, vector<int> &pattern);
+
 bool knuthMorrisPrattAlgorithm(string str, string substr) {
-  // Write your code here.
 	vector<int> pattern = buildpattern(substr);
 	return doesmatch(str, substr, pattern);
 	
