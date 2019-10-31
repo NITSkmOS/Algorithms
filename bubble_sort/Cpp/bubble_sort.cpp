@@ -7,6 +7,9 @@ void swap(int *xp, int *yp) {
 	*yp = temp;
 }
 
+/* Bubble Sort sorts the list by evaluating it repeatedly,
+comparing adjacent pairs,
+and swapping them if they are in wrong order */
 void bubble_sort(int arr[], int n) {
 	int i, j;
 	bool swapped;
