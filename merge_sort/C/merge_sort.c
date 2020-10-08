@@ -4,20 +4,6 @@
 void mergesort(int[], int, int);
 void merge(int[], int, int, int);
 
-int main() {
-	int arr_size = 6;
-	int arr[] = {10, 9, 8, 7, 6, 5};
-	mergesort(arr, 0, arr_size);
-
-	// Print sorted array
-	for (int i = 0; i < arr_size; i++) {
-		printf("%d ", arr[i]);
-	}
-	printf("\n");
-
-	return 0;
-}
-
 /*
  * Recursively split the array and call the merge function
  * Main entry point of Merge Sort
@@ -70,4 +56,18 @@ void merge(int arr[], int l, int m, int r) {
 		++j;
 		++k;
 	}
+}
+
+int main() {
+	int arr_size = 6;
+	int arr[] = {10, 9, 8, 7, 6, 5};
+	mergesort(arr, 0, arr_size);
+
+	// Print sorted array
+	for (int i = 0; i < arr_size; i++) {
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+
+	return 0;
 }
