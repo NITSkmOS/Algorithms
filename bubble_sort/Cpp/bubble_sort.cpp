@@ -1,42 +1,65 @@
 #include <iostream>
 using namespace std;
 
-void swap(int *xp, int *yp) {
-	int temp = *xp;
-	*xp = *yp;
-	*yp = temp;
+void bubbleSort(int array[], int size, int order){
+
+  if(order == 1){
+    for(int i=0; i < size-1; i++){
+      int flag = 0;
+
+      for(int j=0; j<size-1-i; j++){
+        if(array[j] > array[j+1]){
+          swap(array[j+1], array[j]);
+          flag = 1;
+        }
+      }
+      if(flag == 0){
+        break;
+      }
+    }
+  }
+
+  else if(order == 2){
+    for(int i=0; i < size-1; i++){
+      int flag = 0;
+
+      for(int j=0; j<size-1-i; j++){
+        if(array[j] < array[j+1]){
+          swap(array[j+1], array[j]);
+          flag = 1;
+        }
+      }
+      if(flag == 0){
+        break;
+      }
+    }
+  }
+
 }
 
-void bubble_sort(int arr[], int n) {
-	int i, j;
-	bool swapped;
-	for (i = 0; i < n-1; i++) {
-		swapped = false;
-		for (j = 0; j < n-i-1; j++) {
-			if (arr[j] > arr[j+1]) {
-				swap(&arr[j], &arr[j+1]);
-				swapped = true;
-			}
-		}
-		if (swapped == false)
-			break;
-	}
-}
-
-/* Function to print an array */
-void print_array(int arr[], int size) {
-	int i;
-	for (i = 0; i < size; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}
-
-// Driver program to test above functions
 int main() {
-	int arr[] = {64, 34, 25, 12, 22, 11, 90};
-	int n = sizeof(arr) / sizeof(arr[0]);
-	bubble_sort(arr, n);
-	cout << "Sorted array: " << endl;
-	print_array(arr, n);
-	return 0;
+  int size;
+  int order;
+
+  cout << "Enter the size of the array:" << endl;
+	cin >> size;
+
+	int array[size];
+
+	cout << "Enter the elements of the array:" << endl;
+	for(int i = 0; i < size; i++){
+	  cin >> array[i];
+  }
+
+  cout << "What type of ordering do you want: \n 1 - Ascending \n 2 - Descending" << endl;
+  cin >> order;
+
+	bubbleSort(array, size, order);
+
+	cout << "The sorted array is:" <<endl;
+	for (int i = 0; i < size; i++) {
+		cout << array[i] << " ";
+  }
+
+  return 0;
 }
