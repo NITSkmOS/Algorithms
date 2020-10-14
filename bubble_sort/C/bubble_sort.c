@@ -1,48 +1,67 @@
 #include <stdio.h>
 
-void bubble_sort(int[], int);
-void print_array(int[], int);
-void swap(int*, int*);
+void swap (int array[], int j){
+  int aux = 0;
+  aux = array[j]; 
+  array[j] = array[j+1]; 
+  array[j+1] = aux;
+}
 
+void bubbleSort(int array[], int size, int order){
+  if(order == 1){
+    for(int i=0; i < size-1; i++){
+      int flag = 0;
+
+      for(int j=0; j<size-1-i; j++){
+        if(array[j] > array[j+1]){
+          swap(array, j);
+          flag = 1;
+        }
+      }
+      if(flag == 0){
+        break;
+      }
+    }
+  }
+
+  else if(order == 2){
+    for(int i=0; i < size-1; i++){
+      int flag = 0;
+
+      for(int j=0; j<size-1-i; j++){
+        if(array[j] < array[j+1]){
+          swap(array, j);
+          flag = 1;
+        }
+      }
+      if(flag == 0){
+        break;
+      }
+    }
+  }
+}
 int main() {
-	int arr[] = {45, 92, 54, 23, 6, 4, 12};
-	int n = sizeof(arr) / sizeof(arr[0]);
-	bubble_sort(arr, n);
-	printf("Sorted array: \n");
-	print_array(arr, n);
-}
+  int size;
+  int order;
 
-/* Function to swap two numbers */
-void swap(int *a, int *b) {
-	int temp = *a;
-	*a = *b;
-	*b = temp;
-}
+  printf("Enter the size of the array:\n");
+	scanf("%i", &size);
 
-/* Bubble Sort algorithm */
-void bubble_sort(int arr[], int n) {
-	int i, j;
-	int swapped;
-	for (i = 0; i < n - 1; ++i) {
-		swapped = 0;
-		for (j = 0; j < n - i - 1; ++j) {
-			if (arr[j] > arr[j+1]) {
-				swap(&arr[j], &arr[j+1]);
-				swapped = 1;
-			}
-		}
+	int array[size];
 
-		/* If no two elements are swapped by inner loop, then break */
-		if (swapped == 0)
-			break;
-	}
-}
+	printf("Enter the elements of the array:\n");
+	for(int i = 0; i < size; i++){
+	  scanf("%i", &array[i]);
+  }
 
-/* Function to print array */
-void print_array(int arr[], int size) {
-	int i;
-	for (i = 0; i < size; i++)
-		printf("%d ", arr[i]);
+  printf("What type of ordering do you want: \n 1 - Ascending \n 2 - Descending\n");
+  scanf("%i", &order);
 
-	printf("\n");
+	bubbleSort(array, size, order);
+
+	printf("The sorted array is:\n");
+	for (int i = 0; i < size; i++){
+    printf("%i ", array[i]);
+  }
+  return 0;
 }
