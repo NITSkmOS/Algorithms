@@ -1,7 +1,7 @@
-public class fenwick_tree {
+public class FenwickTree {
     private int[] data;
 
-    public fenwick_tree(int size) {
+    public FenwickTree(int size) {
         data = new int[size + 1];
     }
 
@@ -60,7 +60,7 @@ public class fenwick_tree {
      * run with "java -ea fenwick_tree" to enable assertions
      */
     public static void main(String[] args) {
-        fenwick_tree tree = new fenwick_tree(8);
+        FenwickTree tree = new FenwickTree(8);
 
         // Set initial value (by default it's 0)
         for (int i = 0; i < 8; i++) {

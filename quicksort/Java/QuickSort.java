@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class quicksort {
+class QuickSort {
     //Main function. Instanciates the unsorted array and calls quicksort.
     public static void main(String args[]) {
         int array[] = {9, 5, 4, 6, 1, 2, 3, 1, 2, 3};
