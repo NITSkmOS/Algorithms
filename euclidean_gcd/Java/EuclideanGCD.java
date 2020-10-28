@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class euclidean_gcd {
+public class EuclideanGCD {
 
     /*
     * Calculates GCD of two numbers a & b using the division-based
@@ -59,7 +59,7 @@ public class euclidean_gcd {
         long gcd_rec = euclideanGcdRecursive(a, b);
         System.out.println("Recursive: GCD of " +a+ " & " +b+ " is : " + gcd_rec);
 
-        euclidean_gcd obj = new euclidean_gcd();
+        EuclideanGCD obj = new EuclideanGCD();
         obj.extendedGcd(a, b);
     }
 }
