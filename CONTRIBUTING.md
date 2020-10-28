@@ -54,7 +54,7 @@ A commit message consists of 3 parts:
 - issue reference
 Example:
 ```
-quicksort.py: Add QuickSort Algorithm
+QuickSort.py: Add QuickSort Algorithm
 
 This adds QuickSort Algorithm which return the concatenation of the
 quicksorted list of elements that are less than or equal to the pivot, the
@@ -67,7 +67,7 @@ Closes https://github.com/NITSkmOS/Algorithms/issues/2
 
 Example:
 ```
-quicksort.py: Add QuickSort Algorithm
+QuickSort.py: Add QuickSort Algorithm
 ```
 - **Maximum of 50 characters.**
 
@@ -133,7 +133,7 @@ repository.
 #### C
 
 ```c
-void quicksort(int ar_size, int *ar) {
+void QuickSort(int ar_size, int *ar) {
     /*
         Your implementation here...
     */
@@ -142,7 +142,7 @@ void quicksort(int ar_size, int *ar) {
 int main() {
     int ar_size = 4, i;
     int a[4] = {2, 3, 0, 4};
-    quicksort(ar_size, a);
+    QuickSort(ar_size, a);
 
     for (i=0; i<ar_size; i++){
         printf("%d\n", a[i]);
@@ -154,7 +154,7 @@ int main() {
 #### Python
 
 ```python
-def quicksort(arr):
+def QuickSort(arr):
     #
     # Your implementation here...
     #
@@ -162,7 +162,7 @@ def quicksort(arr):
 
 def main():
     arr = [2, 3, 0, 4]
-    sorted_arr = quicksort(arr)
+    sorted_arr = QuickSort(arr)
     print(sorted_arr)
 
 

@@ -1,6 +1,6 @@
-def bubble_sort(arr):  # Function that performs the bubbleSort
+def BubbleSort(arr):  # Function that performs the bubbleSort
     """
-    The bubble_sort funtion takes an array as an argument
+    The BubbleSort funtion takes an array as an argument
     and then sorts the elements present in that array.
     :param arr: A array for sorting
     """
@@ -14,7 +14,7 @@ def bubble_sort(arr):  # Function that performs the bubbleSort
 
 def main():
     arr = [12, 96, 24, 48, 36, 60, 84, 72]    # Declaring a sample array
-    bubble_sort(arr)  # Calling the bubbleSort function and passing the array
+    BubbleSort(arr)  # Calling the bubbleSort function and passing the array
     print('Sorted array is: {}'.format(' '.join(map(str, arr))))
 
 

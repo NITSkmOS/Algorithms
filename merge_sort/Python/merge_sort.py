@@ -29,7 +29,7 @@ def _merge(left, right):
     return result
 
 
-def merge_sort(arr):
+def MergeSort(arr):
     """
     Fuction to do merge sort.
 
@@ -42,15 +42,15 @@ def merge_sort(arr):
     left = arr[:middle]
     right = arr[middle:]
 
-    left = merge_sort(left)
-    right = merge_sort(right)
+    left = MergeSort(left)
+    right = MergeSort(right)
     return list(_merge(left, right))
 
 
 def main():
     arr = [6, 5, 4, 3, 2, 1]
     print('Sorted element using Merge Sort: {}'.format(
-              ' '.join(map(str, merge_sort(arr)))))
+              ' '.join(map(str, MergeSort(arr)))))
 
 
 if __name__ == '__main__':

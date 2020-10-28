@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class merge_sort {
+class MergeSort {
 
     //Main function. Instanciates the unsorted array and calls mergesort.
     public static void main(String args[]) {
