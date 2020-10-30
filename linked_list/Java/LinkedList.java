@@ -43,6 +43,7 @@ public class LinkedList<T> {
      * Returns the value that was removed if the requested value
      * was found. Otherwise returns null if the value doesn't exist
      * in the list
+     *
      * @param val
      * @return T
      */
