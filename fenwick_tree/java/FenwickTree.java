@@ -7,8 +7,9 @@ public class FenwickTree {
 
     /**
      * Returns the sum from 0 to right (inclusive)
+     *
      * @param right the inclusive right index
-     * @return sum([0; right])
+     * @return sum([0 ; right])
      */
     public int sum(int right) {
         int sum = 0;
@@ -21,9 +22,10 @@ public class FenwickTree {
 
     /**
      * Returns the sum from left (inclusive) to right (inclusive)
-     * @param left the inclusive left index
+     *
+     * @param left  the inclusive left index
      * @param right the inclusive right index
-     * @return sum([left; right])
+     * @return sum([left ; right])
      */
     public int sum(int left, int right) {
         return sum(right) - sum(left - 1);
@@ -31,8 +33,9 @@ public class FenwickTree {
 
     /**
      * Add the difference to the data index
+     *
      * @param index the index to update
-     * @param diff the amount to add to that index
+     * @param diff  the amount to add to that index
      */
     public void add(int index, int diff) {
         index++; // Convert to 1-based index
@@ -43,6 +46,7 @@ public class FenwickTree {
 
     /**
      * Returns the tree's capacity
+     *
      * @return tree sizes
      */
     public int getSize() {
