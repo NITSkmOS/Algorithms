@@ -1,6 +1,6 @@
 import java.util.NoSuchElementException;
 
-public class Stack<Item>{
+public class Stack<Item> {
     private int size; // size of the Stack
     private Node first; // top of Stack
 
@@ -53,7 +53,7 @@ public class Stack<Item>{
      *
      * @throws NoSuchElementException if this Stack is empty
      */
-    public Item pop() throws  NoSuchElementException{
+    public Item pop() throws NoSuchElementException {
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");
         Item item = first.item;
         first = first.next;
@@ -68,7 +68,7 @@ public class Stack<Item>{
      * @return the item on top of this Stack
      * @throws NoSuchElementException if this Stack is empty
      */
-    public Item peek() throws  NoSuchElementException{
+    public Item peek() throws NoSuchElementException {
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");
         return first.item;
     }
