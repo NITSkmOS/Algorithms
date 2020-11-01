@@ -1,6 +1,6 @@
-public class linked_list<T> {
+public class LinkedList<T> {
     public static void main(String[] args) {
-        linked_list<String> list = new linked_list<String>("head");
+        LinkedList<String> list = new LinkedList<>("head");
         list.add("second");
         list.add("third");
         list.add("last");
@@ -11,11 +11,11 @@ public class linked_list<T> {
 
     private Node<T> head;
 
-    public linked_list(T head) {
+    public LinkedList(T head) {
         this.head = new Node<T>(head);
     }
 
-    public linked_list() {
+    public LinkedList() {
     }
 
     /**
@@ -43,6 +43,7 @@ public class linked_list<T> {
      * Returns the value that was removed if the requested value
      * was found. Otherwise returns null if the value doesn't exist
      * in the list
+     *
      * @param val
      * @return T
      */

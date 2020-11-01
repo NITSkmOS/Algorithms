@@ -14,3 +14,4 @@
 .vscode/
 # coala
 *.orig
+*.iml

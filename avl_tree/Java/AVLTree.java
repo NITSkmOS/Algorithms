@@ -14,12 +14,12 @@ public class AVLTree {
         avl.prntIn(avl.root);
         System.out.println(" ");
         System.out.println(avl.isEmpty());
-        avl.delNode(avl.root,avl.root.data);
+        avl.delNode(avl.root, avl.root.data);
         avl.prntIn(avl.root);
         System.out.println(" ");
         try {
-            avl.delNode(avl.root,1111);
-        } catch(NoSuchElementException e) {
+            avl.delNode(avl.root, 1111);
+        } catch (NoSuchElementException e) {
             System.out.println("Cannot delete element");
         }
     }
@@ -28,7 +28,7 @@ public class AVLTree {
 class AVL {
     public NodeAVL root;
 
-    public AVL(){
+    public AVL() {
         root = null;
     }
 
@@ -185,11 +185,9 @@ class AVL {
                     root.hRight = Math.max(root.right.hLeft, root.right.hLeft);
                 root = isRotate(root);
             }
-        }
-        else if (node.right == null && node.left == null) {
+        } else if (node.right == null && node.left == null) {
             throw new NoSuchElementException("element you wanna delete not exist");
-        }
-        else if (node.right != null && node.right.data == data) {
+        } else if (node.right != null && node.right.data == data) {
             NodeAVL del = node.right;
             if (del.right == null && del.left == null)
                 node.right = null;
